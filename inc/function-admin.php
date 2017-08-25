@@ -22,16 +22,19 @@ add_action('admin_menu', 'sunset_add_admin_page');
 
 // create custom settings / record on the database
 function sunset_custom_settings() {
-  // FULL NAME
+  // NAME & DESCRIPTION
   register_setting('sunset-settings-group', 'first_name');
   register_setting('sunset-settings-group', 'last_name');
+  register_setting('sunset-settings-group', 'user_description');
   // SOCIAL MEDIA HANDLERS
   register_setting('sunset-settings-group', 'twitter_handler', 'sunset_sanitize_twitter_handler');
   register_setting('sunset-settings-group', 'facebook_handler');
   register_setting('sunset-settings-group', 'gplus_handler');
 
   add_settings_section('sunset-sidebar-options', 'Sidebar Options', 'sunset_sidebar_options', 'alecaddd_sunset');
+
   add_settings_field('sidebar-name', 'Full Name', 'sunset_sidebar_name', 'alecaddd_sunset', 'sunset-sidebar-options');
+  add_settings_field('sidebar-description', 'Description', 'sunset_sidebar_description', 'alecaddd_sunset', 'sunset-sidebar-options');
   // Social media handlers
   add_settings_field('sidebar-twitter', 'Twitter handler', 'sunset_sidebar_twitter', 'alecaddd_sunset', 'sunset-sidebar-options');
   add_settings_field('sidebar-facebook', 'Facebook handler', 'sunset_sidebar_facebook', 'alecaddd_sunset', 'sunset-sidebar-options');
@@ -44,11 +47,15 @@ function sunset_sidebar_options() {
   echo 'Customize your sidebar information';
 }
 
-// callback add_settings_field Full Name
+// callback add_settings_field Name & Description
 function sunset_sidebar_name() {
   $firstName = esc_attr(get_option('first_name'));
   $lastName = esc_attr(get_option('last_name'));
   echo '<input type="text" name="first_name" value="' . $firstName . '" placeholder="First name"> <input type="text" name="last_name" value="' . $lastName . '" placeholder="Last name">';
+}
+function sunset_sidebar_description() {
+  $description = esc_attr(get_option('user_description'));
+  echo '<input type="text" name="user_description" value="' . $description . '" placeholder="User description"><p class="description">Write your description.</p>';
 }
 
 // callback add_settings_field Twitter handler
@@ -85,15 +92,6 @@ function sunset_theme_create_page() {
 function sunset_theme_settings_page() {
   // generation of our admin sub pages
 }
-
-
-
-
-
-
-
-
-
 
 
 
