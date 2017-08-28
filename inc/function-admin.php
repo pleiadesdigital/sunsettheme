@@ -10,7 +10,8 @@ function sunset_add_admin_page() {
   add_menu_page('Sunset Theme Options', 'Sunset', 'manage_options', 'alecaddd_sunset', 'sunset_theme_create_page', 'dashicons-nametag', 26);
 
   // Generate Sunset Admin Sub Pages
-  add_submenu_page('alecaddd_sunset', 'Sunset Theme Options', 'Settings', 'manage_options', 'alecaddd_sunset', 'sunset_theme_create_page');
+  add_submenu_page('alecaddd_sunset', 'Sunset Sidebar Options', 'Sidebar', 'manage_options', 'alecaddd_sunset', 'sunset_theme_create_page');
+  add_submenu_page('alecaddd_sunset', 'Sunset Theme Options', 'Theme Options', 'manage_options', 'alecaddd_sunset_theme', 'sunset_theme_support_page');
   add_submenu_page('alecaddd_sunset', 'Sunset CSS Options', 'Custom CSS', 'manage_options', 'alecaddd_sunset_css', 'sunset_theme_settings_page');
 
   // Activate custom settings
@@ -22,6 +23,7 @@ add_action('admin_menu', 'sunset_add_admin_page');
 
 // create custom settings / record on the database
 function sunset_custom_settings() {
+  /* SIDEBAR OPTIONS */
   // NAME & DESCRIPTION
   register_setting('sunset-settings-group', 'profile_picture');
   register_setting('sunset-settings-group', 'first_name');
@@ -43,8 +45,38 @@ function sunset_custom_settings() {
   add_settings_field('sidebar-facebook', 'Facebook handler', 'sunset_sidebar_facebook', 'alecaddd_sunset', 'sunset-sidebar-options');
   add_settings_field('sidebar-gplus', 'GPlus handler', 'sunset_sidebar_gplus', 'alecaddd_sunset', 'sunset-sidebar-options');
 
+  /* THEME SUPPORT OPTIONS */
+  register_setting('sunset-theme-support', 'post_formats', 'sunset_post_formats_callback');
+
+  add_settings_section('sunset-theme-options', 'Theme Options', 'sunset_theme_options', 'alecaddd_sunset_theme');
+
+  add_settings_field('post-formats', 'Post Formats', 'sunset_post_formats', 'alecaddd_sunset_theme', 'sunset-theme-options');
+
 } //sunset_custom_settings()
 
+// Post Formats callback function
+
+function sunset_post_formats_callback($input) {
+  return($input);
+}
+
+function sunset_theme_options() {
+  echo "Activate and Deactivate specific Theme Support Options";
+}
+
+function sunset_post_formats() {
+  $options = get_option('post_formats');
+  $formats = array('aside', 'gallery', 'link', 'image', 'quote', 'status', 'video', 'audio', 'chat');
+  $output = '';
+  foreach ($formats as $format) {
+    //$checked = (@$options[$format] == 1 ? 'checked' : ''); //Alecaddd original
+    $checked = (isset($options[$format]) && $options[$format] == 1 ? "checked" : "");
+    $output .= '<label><input type="checkbox" id="' . $format . '" name="post_formats[' . $format . ']" value="1" ' . $checked . '> ' . $format . '</label><br>';
+  }
+  echo $output;
+}
+
+/*Sidebar Options Functions*/
 // callback for add_settings_section
 function sunset_sidebar_options() {
   echo 'Customize your sidebar information';
@@ -89,6 +121,10 @@ function sunset_sanitize_twitter_handler($input) {
   return $output;
 }
 
+// callback function for Options submenu page
+function sunset_theme_support_page() {
+  require_once(get_template_directory() . '/inc/templates/sunset-theme-support.php');
+}
 
 
 // callback function for Generate Admin Page
