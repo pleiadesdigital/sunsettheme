@@ -23,6 +23,7 @@ add_action('admin_menu', 'sunset_add_admin_page');
 // create custom settings / record on the database
 function sunset_custom_settings() {
   // NAME & DESCRIPTION
+  register_setting('sunset-settings-group', 'profile_picture');
   register_setting('sunset-settings-group', 'first_name');
   register_setting('sunset-settings-group', 'last_name');
   register_setting('sunset-settings-group', 'user_description');
@@ -33,6 +34,8 @@ function sunset_custom_settings() {
 
   add_settings_section('sunset-sidebar-options', 'Sidebar Options', 'sunset_sidebar_options', 'alecaddd_sunset');
 
+  // Profile Picture & Name & Description
+  add_settings_field('sidebar-profile-picture', 'Profile Picture', 'sunset_sidebar_profile', 'alecaddd_sunset', 'sunset-sidebar-options');
   add_settings_field('sidebar-name', 'Full Name', 'sunset_sidebar_name', 'alecaddd_sunset', 'sunset-sidebar-options');
   add_settings_field('sidebar-description', 'Description', 'sunset_sidebar_description', 'alecaddd_sunset', 'sunset-sidebar-options');
   // Social media handlers
@@ -47,6 +50,11 @@ function sunset_sidebar_options() {
   echo 'Customize your sidebar information';
 }
 
+// callback add_settings_field Profile Picture
+function sunset_sidebar_profile() {
+  $picture = esc_attr(get_option('profile_picture'));
+  echo '<input type="button" class="button button-secondary" value="Upload Profile Picture" id="upload-button"><input type="hidden" id="profile-picture" name="profile_picture" value="' . $picture . '"';
+}
 // callback add_settings_field Name & Description
 function sunset_sidebar_name() {
   $firstName = esc_attr(get_option('first_name'));
