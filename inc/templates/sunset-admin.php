@@ -29,7 +29,7 @@
 <form method="post" action="options.php" class="sunset-general-form">
   <?php settings_fields('sunset-settings-group'); ?>
   <?php do_settings_sections('alecaddd_sunset'); ?>
-  <?php submit_button( 'Guardar elementos'); ?>
+  <?php submit_button('Guardar cambios', 'primary', 'btnSubmit'); ?>
 </form>
 
 
