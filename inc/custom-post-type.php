@@ -27,7 +27,7 @@ function sunset_contact_custom_post_type() {
     'capability_type'   => 'post',
     'hierarchical'      => false,
     'menu_position'     => 26,
-    'menu_icon'         => 'dashicons-email',
+    'menu_icon'         => 'dashicons-welcome-write-blog',
     'supports'          => array('title', 'editor', 'author'),
   );
 
