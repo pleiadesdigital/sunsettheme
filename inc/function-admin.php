@@ -12,6 +12,7 @@ function sunset_add_admin_page() {
   // Generate Sunset Admin Sub Pages
   add_submenu_page('alecaddd_sunset', 'Sunset Sidebar Options', 'Sidebar', 'manage_options', 'alecaddd_sunset', 'sunset_theme_create_page');
   add_submenu_page('alecaddd_sunset', 'Sunset Theme Options', 'Theme Options', 'manage_options', 'alecaddd_sunset_theme', 'sunset_theme_support_page');
+  add_submenu_page('alecaddd_sunset', 'Sunset Contact Form', 'Contact Form', 'manage_options', 'alecaddd_sunset_theme_contact', 'sunset_contact_form_page');
   add_submenu_page('alecaddd_sunset', 'Sunset CSS Options', 'Custom CSS', 'manage_options', 'alecaddd_sunset_css', 'sunset_theme_settings_page');
 
   // Activate custom settings
@@ -56,17 +57,39 @@ function sunset_custom_settings() {
   add_settings_field('custom-header', 'Custom Header', 'sunset_custom_header', 'alecaddd_sunset_theme', 'sunset-theme-options');
   add_settings_field('custom-background', 'Custom Background', 'sunset_custom_background', 'alecaddd_sunset_theme', 'sunset-theme-options');
 
+  /* CONTACT FORM OPTIONS */
+  register_setting('sunset-contact-options', 'activate_contact');
+  add_settings_section( 'sunset-contact-section', 'Contact Form', 'sunset_contact_section', 'alecaddd_sunset_theme_contact');
+  add_settings_field('activate-form', 'Activate Contact Form', 'sunset_activate_contact', 'alecaddd_sunset_theme_contact', 'sunset-contact-section');
+
+
+
+
+
+
 } //sunset_custom_settings()
 
 // Post Formats callback function
-
 function sunset_post_formats_callback($input) {
   return($input);
 }
 
+// Theme Options callback
 function sunset_theme_options() {
   echo "Activate and Deactivate specific Theme Support Options";
 }
+
+// Contact Form callback
+function sunset_contact_section() {
+  echo "Activate and Deactivate the Built-in Contact Form";
+}
+
+function sunset_activate_contact() {
+  $options = get_option('activate_contact');
+  $checked = (isset($options) && $options == 1 ? "checked" : "");
+  echo '<label><input type="checkbox" id="activate_contact" name="activate_contact" value="1" ' . $checked . '></label>';
+}
+
 
 function sunset_post_formats() {
   $options = get_option('post_formats');
@@ -144,6 +167,11 @@ function sunset_sanitize_twitter_handler($input) {
 // callback function for Options submenu page
 function sunset_theme_support_page() {
   require_once(get_template_directory() . '/inc/templates/sunset-theme-support.php');
+}
+
+// callback function for Contact submenu page
+function sunset_contact_form_page() {
+  require_once(get_template_directory() . '/inc/templates/sunset-contact-form.php');
 }
 
 
