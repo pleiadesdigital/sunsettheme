@@ -4,7 +4,9 @@
   ADMIN ENQUEUE FUNCTIONS
 ========================================*/
 // Register Custom CSS
+
 function sunset_load_admin_scripts($hook) {
+  // echo $hook;
   if ('toplevel_page_alecaddd_sunset' != $hook) { return; }
 
   wp_register_style('sunset_admin', get_template_directory_uri() . '/css/sunset.admin.css', array(), '1.0.0', 'all');

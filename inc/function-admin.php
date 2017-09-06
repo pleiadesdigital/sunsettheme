@@ -41,6 +41,7 @@ function sunset_custom_settings() {
   add_settings_field('sidebar-profile-picture', 'Profile Picture', 'sunset_sidebar_profile', 'alecaddd_sunset', 'sunset-sidebar-options');
   add_settings_field('sidebar-name', 'Full Name', 'sunset_sidebar_name', 'alecaddd_sunset', 'sunset-sidebar-options');
   add_settings_field('sidebar-description', 'Description', 'sunset_sidebar_description', 'alecaddd_sunset', 'sunset-sidebar-options');
+
   // Social media handlers
   add_settings_field('sidebar-twitter', 'Twitter handler', 'sunset_sidebar_twitter', 'alecaddd_sunset', 'sunset-sidebar-options');
   add_settings_field('sidebar-facebook', 'Facebook handler', 'sunset_sidebar_facebook', 'alecaddd_sunset', 'sunset-sidebar-options');
@@ -62,12 +63,24 @@ function sunset_custom_settings() {
   add_settings_section( 'sunset-contact-section', 'Contact Form', 'sunset_contact_section', 'alecaddd_sunset_theme_contact');
   add_settings_field('activate-form', 'Activate Contact Form', 'sunset_activate_contact', 'alecaddd_sunset_theme_contact', 'sunset-contact-section');
 
+  /* CUSTOM CSS OPTIONS */
 
-
-
-
+  register_setting('sunset-custom-css-options', 'sunset_css');
+  add_settings_section('sunset-custom-css-section', 'Custom CSS', 'sunset_custom_css_section_callback', 'alecaddd_sunset_css');
+  add_settings_field('custom-css', 'Insert your Custom CSS', 'sunset_custom_css_callback', 'alecaddd_sunset_css', 'sunset-custom-css-section');
 
 } //sunset_custom_settings()
+
+function sunset_custom_css_section_callback() {
+  echo 'Customize Sunset Theme with your own CSS';
+}
+
+function sunset_custom_css_callback() {
+  $css = get_option('sunset_css');
+  if (empty($css) ? 'Sunset Theme Custom CSS' : $css);
+  echo '<textarea placeholder="Sunset Custom CSS">' . $css . '</textarea>';
+}
+
 
 // Post Formats callback function
 function sunset_post_formats_callback($input) {
@@ -182,19 +195,6 @@ function sunset_theme_create_page() {
 
 // callback function for Generate Admin Subpages
 function sunset_theme_settings_page() {
-  // generation of our admin sub pages
+  require_once(get_template_directory() . '/inc/templates/sunset-custom-css.php');
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
 
