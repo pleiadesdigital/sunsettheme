@@ -21,8 +21,16 @@ function sunset_load_admin_scripts($hook) {
 add_action('admin_enqueue_scripts', 'sunset_load_admin_scripts');
 
 
+/*======================================
+  FRONT END ENQUEUE FUNCTIONS
+========================================*/
 
+function sunset_load_scripts() {
 
+  wp_enqueue_style('raleway', 'https://fonts.googleapis.com/css?family=Playfair+Display:400,700|Raleway:300,400,600' );
+
+}
+add_action('wp_enqueue_scripts', 'sunset_load_scripts');
 
 
 

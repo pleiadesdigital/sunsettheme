@@ -29,3 +29,8 @@ $background = get_option('custom_background');
 if (isset($background) && $background == 1) {
   add_theme_support('custom-background');
 }
+
+
+
+
+

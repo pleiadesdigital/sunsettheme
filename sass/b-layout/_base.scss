@@ -1,0 +1,13 @@
+// GENERIC STYLES
+body {
+  font-family: $copy;
+  font-weight: $normal;
+  color: $black;
+  font-size: 16px;
+}
+
+.background-image {
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}

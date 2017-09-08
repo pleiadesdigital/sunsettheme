@@ -1,15 +1,247 @@
-/*
-Theme Name: Sunset Theme
-Theme URI: http://www.pleiadesdigital.com
+/*!
+Theme Name: Sunset (based on PleiadesMoon)
+Theme URI: http://underscores.me/
 Author: Ronaldo Ortiz
 Author URI: http://www.pleiadesdigital.com
-Description: Premium theme for training purposes
+Description: Pleiades Digital Gulp Compass Responsive
 Version: 1.0.0
 License: GNU General Public License v2 or later
-License URI: http://www.gnu.org.license/gpl-2.0.html
-Tags: blog, sidebar, responsive, clean, minimal, icon font, custom admin options
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: pleiades17
 */
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+0. Compass Imports & External
+A. Normalize
+	a.1 Normalize
+	a.2 Accessibility
+	a.3 Alignments
+	a.4 Clearings
+B. Layout
+	b.0 Base
+	b.1 Header
+	b.2 Front Page
+	b.3 Regular Content
+	b.4 Pages
+	b.5 Posts
+	b.6 Footer
+C. Elements
+	c.1 Typography
+	c.2 Formatting
+	c.3 Forms
+	c.4 Links
+	c.5 Lists
+	c.6 Tables
+D. Navigation
+	d.1 Main Navigation
+E. Misc Markup
+	e.1 Comments
+	e.2 Media
+	e.3 Widgets
+F. Media Queries
+	f.1 All Media Queries
+G. Theme Fallbacks
+	g.1 Customizer
+	g.2 SVG Fallback
+	g.3 Print
+	g.4 Featured Image Hover
+H. Variables
+	h.1 Colors
+	h.2 Fonts
+	h.3 Structure
+	h.4 Mixins
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+0. Compass Imports & External
+--------------------------------------------------------------*/
+/* line 5, ../../../../../../../../usr/local/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
 
+/* line 22, ../../../../../../../../usr/local/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
 
+/* line 24, ../../../../../../../../usr/local/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
 
+/* line 26, ../../../../../../../../usr/local/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
 
+/* line 28, ../../../../../../../../usr/local/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../../../../../usr/local/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../../../../../usr/local/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../../../../../usr/local/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../../../../../usr/local/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+/* $susy2: (
+	columns: 24,
+	container: 1000px,
+	global-box-sizing: border-box,
+	gutter: 1,
+	gutter-position: after
+);
+ */
+/*
+flow: ltr, // ltr | rtl
+output: float, // float | isolate
+math: fluid, // fluid | static (requires column-width)
+column-width: false, //false | value
+container: auto, // length or % | auto
+container-position: center, // left | center | right | <length> [*2] (grid)
+last-flow: to, // to | from (last element float right or left)
+columns: 12,
+gutters: 1,
+gutter-position: after, // before | after | split | inside | inside-stat
+global-box-sizing: content-box, //content-box | border-box (affects inside)
+debug: (
+	image: hide,
+	color: rgba(#6666FF, 0.25),
+	output: background, // background | overlay
+	toggle: top right,
+),
+use-custom: (
+	background-image: true, // look for background-image mixin
+	background-options: false, // look for background-size mixin, -origin...
+	box-sizing: true, // look for custom box sizing mixing
+	clearfix: false, // true - look for internal clearfix before using ...
+	rem: true, // look for rem mixin
+)
+*/
+/*--------------------------------------------------------------
+A. Normalize
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+B. Layout
+--------------------------------------------------------------*/
+/* line 2, sass/b-layout/_base.scss */
+body {
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+  color: #000000;
+  font-size: 16px;
+}
+
+/* line 9, sass/b-layout/_base.scss */
+.background-image {
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/* line 3, sass/b-layout/_header.scss */
+.main-header .main-header-wrapper {
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  display: block;
+  height: 326px;
+  text-align: center;
+  display: -webkit-flex;
+  -webkit-justify-content: center;
+  -webkit-align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* line 12, ../../../../../../../../usr/local/lib/ruby/gems/2.4.0/gems/susy-2.2.12/sass/susy/output/support/_clearfix.scss */
+.main-header .main-header-wrapper:after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+/* line 16, sass/b-layout/_header.scss */
+.main-header .main-header-wrapper .header-content {
+  text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.4);
+  text-shadow: 0px 1px 2px 1px rgba(0, 0, 0, 0.4);
+}
+/* line 18, sass/b-layout/_header.scss */
+.main-header .main-header-wrapper .header-content .site-title {
+  font-size: 34px;
+  font-size: 2.125rem;
+  text-transform: uppercase;
+  color: #f2f2f2;
+  display: none;
+}
+/* line 25, sass/b-layout/_header.scss */
+.main-header .main-header-wrapper .header-content .sunset-logo {
+  display: block;
+  margin: 0px auto;
+  width: 150px;
+  height: auto;
+}
+/* line 30, sass/b-layout/_header.scss */
+.main-header .main-header-wrapper .header-content .sunset-logo .zoom {
+  fill: #f2f2f2;
+}
+/* line 34, sass/b-layout/_header.scss */
+.main-header .main-header-wrapper .header-content .site-description {
+  color: #e6e6e6;
+  margin-top: 1em;
+}
+
+/*--------------------------------------------------------------
+C. Elements
+--------------------------------------------------------------*/
+/* Font Icon */
+/*--------------------------------------------------------------
+D. Navigation
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+E. Misc Markup
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+F. Media Queries
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+G. Theme Fallbacks
+--------------------------------------------------------------*/
+
+/*# sourceMappingURL=style.css.map */
