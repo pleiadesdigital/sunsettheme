@@ -13,3 +13,17 @@
 // $headerImage: 'http://localhost/~ronyortiz/sites2017/supremoconsejo/wp-content/themes/pleiades17/assets/images/coffee.jpg';
 
 // $contactImage: 'http://localhost/~ronyortiz/sites2017/acompas/wp-content/themes/pleiades17/assets/images/back-contacto.jpg';
+
+
+// Link Animation Mixin
+@mixin animate($attr, $time) {
+  -webkit-transition: $attr $time ease;
+  -moz-transition: $attr $time ease;
+  -ms-transition: $attr $time ease;
+  -o-transition: $attr $time ease;
+  transition: $attr $time ease;
+}
+
+
+
+

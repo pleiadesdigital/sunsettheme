@@ -268,12 +268,18 @@
               c0,0.2,0,0.3-0.1,0.5c0,0.2-0.1,0.3-0.3,0.4c-0.1,0.1-0.3,0.2-0.5,0.3c-0.2,0.1-0.5,0.1-0.9,0.2L-210.4,109.5z"/>
           </g>
           </svg></span>
-        <h2 class="site-description"><?php bloginfo('description'); ?>&nbsp;&nbsp;<i class="fa fa-anchor" aria-hidden="true"></i></h2>
+        <h2 class="site-description"><?php bloginfo('description'); ?></h2>
 
       </div><!-- class="header-content" -->
       <!-- TOP NAVIGATION -->
       <nav class="header-nav">
-
+        <?php
+          wp_nav_menu(array(
+            'theme_location'    => 'primary',
+            'container'         => false,
+            'menu_class'        => 'top-navigation'
+          ));
+        ?>
       </nav>
 
     </div><!-- class="main-header-wrapper" -->

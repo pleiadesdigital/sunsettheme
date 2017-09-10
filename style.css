@@ -226,6 +226,64 @@ body {
   color: #e6e6e6;
   margin-top: 1em;
 }
+/* line 41, sass/b-layout/_header.scss */
+.main-header .main-header-wrapper .header-nav {
+  display: block;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+/* line 47, sass/b-layout/_header.scss */
+.main-header .main-header-wrapper .header-nav .top-navigation {
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
+  justify-content: center;
+  background-color: rgba(242, 242, 242, 0.1);
+  border-top: 1px solid rgba(242, 242, 242, 0.1);
+}
+/* line 54, sass/b-layout/_header.scss */
+.main-header .main-header-wrapper .header-nav .top-navigation li {
+  display: flex;
+}
+/* line 60, sass/b-layout/_header.scss */
+.main-header .main-header-wrapper .header-nav .top-navigation li a {
+  padding: 1.5em 2em;
+  color: #f2f2f2;
+  text-align: center;
+  font-family: "Raleway", sans-serif;
+  font-size: 14px;
+  font-size: 0.875rem;
+  font-weight: 400;
+  text-decoration: none;
+  text-transform: uppercase;
+  -moz-transition: all, 320ms;
+  -o-transition: all, 320ms;
+  -webkit-transition: all, 320ms;
+  transition: all, 320ms;
+}
+/* line 74, sass/b-layout/_header.scss */
+.main-header .main-header-wrapper .header-nav .top-navigation li a:hover, .main-header .main-header-wrapper .header-nav .top-navigation li a:focus {
+  background-color: rgba(51, 51, 51, 0.2);
+}
+/* line 78, sass/b-layout/_header.scss */
+.main-header .main-header-wrapper .header-nav .top-navigation li a:after {
+  /* content: '';
+  position: absolute;
+  display: block;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 2px;
+  background: black; */
+}
+/* line 89, sass/b-layout/_header.scss */
+.main-header .main-header-wrapper .header-nav .top-navigation li.current-menu-item a, .main-header .main-header-wrapper .header-nav .top-navigation li.current_page_item a {
+  text-decoration: none;
+  background-color: rgba(51, 51, 51, 0.1);
+  cursor: default;
+}
 
 /*--------------------------------------------------------------
 C. Elements
