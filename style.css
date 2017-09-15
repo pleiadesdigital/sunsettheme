@@ -208,7 +208,6 @@ body {
   font-size: 2.125rem;
   text-transform: uppercase;
   color: #f2f2f2;
-  display: none;
 }
 /* line 25, sass/b-layout/_header.scss */
 .main-header .main-header-wrapper .header-content .sunset-logo {
@@ -226,7 +225,15 @@ body {
   color: #e6e6e6;
   margin-top: 1em;
 }
-/* line 41, sass/b-layout/_header.scss */
+
+/*--------------------------------------------------------------
+C. Elements
+--------------------------------------------------------------*/
+/* Font Icon */
+/*--------------------------------------------------------------
+D. Navigation
+--------------------------------------------------------------*/
+/* line 5, sass/d-navigation/_main-navigation.scss */
 .main-header .main-header-wrapper .header-nav {
   display: block;
   width: 100%;
@@ -234,7 +241,7 @@ body {
   bottom: 0;
   left: 0;
 }
-/* line 47, sass/b-layout/_header.scss */
+/* line 11, sass/d-navigation/_main-navigation.scss */
 .main-header .main-header-wrapper .header-nav .top-navigation {
   display: flex;
   align-items: center;
@@ -243,11 +250,11 @@ body {
   background-color: rgba(242, 242, 242, 0.1);
   border-top: 1px solid rgba(242, 242, 242, 0.1);
 }
-/* line 54, sass/b-layout/_header.scss */
+/* line 18, sass/d-navigation/_main-navigation.scss */
 .main-header .main-header-wrapper .header-nav .top-navigation li {
   display: flex;
 }
-/* line 60, sass/b-layout/_header.scss */
+/* line 24, sass/d-navigation/_main-navigation.scss */
 .main-header .main-header-wrapper .header-nav .top-navigation li a {
   padding: 1.5em 2em;
   color: #f2f2f2;
@@ -263,11 +270,11 @@ body {
   -webkit-transition: all, 320ms;
   transition: all, 320ms;
 }
-/* line 74, sass/b-layout/_header.scss */
-.main-header .main-header-wrapper .header-nav .top-navigation li a:hover, .main-header .main-header-wrapper .header-nav .top-navigation li a:focus {
+/* line 38, sass/d-navigation/_main-navigation.scss */
+.main-header .main-header-wrapper .header-nav .top-navigation li a:hover, .main-header .main-header-wrapper .header-nav .top-navigation li a:focus, .main-header .main-header-wrapper .header-nav .top-navigation li a:visited {
   background-color: rgba(51, 51, 51, 0.2);
 }
-/* line 78, sass/b-layout/_header.scss */
+/* line 43, sass/d-navigation/_main-navigation.scss */
 .main-header .main-header-wrapper .header-nav .top-navigation li a:after {
   /* content: '';
   position: absolute;
@@ -278,20 +285,13 @@ body {
   height: 2px;
   background: black; */
 }
-/* line 89, sass/b-layout/_header.scss */
+/* line 54, sass/d-navigation/_main-navigation.scss */
 .main-header .main-header-wrapper .header-nav .top-navigation li.current-menu-item a, .main-header .main-header-wrapper .header-nav .top-navigation li.current_page_item a {
   text-decoration: none;
   background-color: rgba(51, 51, 51, 0.1);
   cursor: default;
 }
 
-/*--------------------------------------------------------------
-C. Elements
---------------------------------------------------------------*/
-/* Font Icon */
-/*--------------------------------------------------------------
-D. Navigation
---------------------------------------------------------------*/
 /*--------------------------------------------------------------
 E. Misc Markup
 --------------------------------------------------------------*/

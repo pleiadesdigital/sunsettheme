@@ -20,7 +20,7 @@
         font-size: 2.125rem;
         text-transform: uppercase;
         color: $snow;
-        display: none;
+        // display: none;
       } //.site-title
       .sunset-logo {
         display: block;
@@ -36,65 +36,6 @@
         margin-top: 1em;
       } //.site-description
     } //.header-content
-
-    // SITE NAVIGATION
-    .header-nav {
-      display: block;
-      width: 100%;
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      .top-navigation { //ul
-        display: flex;
-        align-items: center;
-        flex-wrap: nowrap;
-        justify-content: center;
-        background-color: rgba($snow, 0.1);
-        border-top: 1px solid rgba($snow, 0.1);
-        li {
-          display: flex;
-          // margin-right: 2em;
-          &:last-child {
-            // margin-right: 0px;
-          }
-          a {
-            // display: block;
-            // height: 100%;
-            // width: 100%;
-            padding: 1.5em 2em;
-            color: $snow;
-            text-align: center;
-            font-family: $copy;
-            font-size: 14px;
-            font-size: 0.875rem;
-            font-weight: $normal;
-            text-decoration: none;
-            text-transform: uppercase;
-            @include transition(all, 320ms);
-            &:hover,
-            &:focus {
-              background-color: rgba($carbon, 0.2);
-            } //&:hover, &:focus
-            &:after {
-              /* content: '';
-              position: absolute;
-              display: block;
-              left: 0;
-              right: 0;
-              bottom: 0;
-              height: 2px;
-              background: black; */
-            } //&:after
-          } //a
-          &.current-menu-item a,
-          &.current_page_item a {
-            text-decoration: none;
-            background-color: rgba($carbon, 0.1);
-            cursor: default;
-          }
-        } //li
-      } //.top-navigation { //ul
-    } //.header-nav
 
   } //.main-header-wrapper
 } //.main-header

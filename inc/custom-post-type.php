@@ -18,7 +18,6 @@ if (isset($contact) && $contact == 1) {
   add_action('add_meta_boxes', 'sunset_contact_add_meta_box');
   add_action('save_post', 'sunset_save_contact_email_data');
 
-
 }
 
 
@@ -40,10 +39,8 @@ function sunset_contact_custom_post_type() {
     'menu_icon'         => 'dashicons-welcome-write-blog',
     'supports'          => array('title', 'editor', 'author'),
   );
-
   register_post_type('sunset-contact', $args);
 }
-
 
 // callback functions
 function sunset_set_contact_columns($columns) {
