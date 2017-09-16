@@ -62,7 +62,22 @@ function sunset_posted_meta() {
 }
 
 function sunset_posted_footer() {
-  return 'tags list and comment link';
+
+  $comments_num = get_comments_number();
+  if (comments_open()) {
+    if ($comments_num == 0) {
+      $comments = __('No Comments');
+    } elseif ($comments_num > 1) {
+      $comments = $comments_num . __(' Comments');
+    } else {
+      $comments = __('1 Comment');
+    }
+    $comments = '<a href="' . get_comments_link() . '">' . $comments . ' <i class="fa fa-commenting" aria-hidden="true"></i></a>';
+  } else {
+    $comments = __('Comments are closed ');
+  }
+
+  return '<div class="post-footer-container"><div class="footer-tags">' . get_the_tag_list('<div class="tags-list"><i class="fa fa-tag" aria-hidden="true"></i>', ' ' , '</div>') . '</div><div class="footer-comments">' . $comments . '</div></div>';
 }
 
 
