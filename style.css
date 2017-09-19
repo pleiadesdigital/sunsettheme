@@ -125,20 +125,30 @@ body {
   font-size: 16px;
 }
 
-/* line 9, sass/b-layout/_base.scss */
+/* line 8, sass/b-layout/_base.scss */
+a {
+  text-decoration: none;
+  color: #999999;
+  -webkit-transition: color 0.3s ease;
+  -moz-transition: color 0.3s ease;
+  -ms-transition: color 0.3s ease;
+  -o-transition: color 0.3s ease;
+  transition: color 0.3s ease;
+}
+/* line 12, sass/b-layout/_base.scss */
+a:hover, a:focus {
+  color: #333333;
+}
+
+/* line 17, sass/b-layout/_base.scss */
 .background-image {
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
 }
 
-/* line 19, sass/b-layout/_base.scss */
-.content-area .content-header {
-  background-color: rgba(204, 51, 102, 0.3);
-}
-/* line 21, sass/b-layout/_base.scss */
+/* line 27, sass/b-layout/_base.scss */
 .content-area .content-header .content-header-wrapper {
-  background-color: rgba(204, 51, 102, 0.3);
   max-width: 1000px;
   margin-left: auto;
   margin-right: auto;
@@ -149,13 +159,8 @@ body {
   display: block;
   clear: both;
 }
-/* line 28, sass/b-layout/_base.scss */
-.content-area .content-body {
-  background-color: rgba(108, 204, 174, 0.3);
-}
-/* line 30, sass/b-layout/_base.scss */
+/* line 34, sass/b-layout/_base.scss */
 .content-area .content-body .content-body-wrapper {
-  background-color: rgba(108, 204, 174, 0.3);
   max-width: 1000px;
   margin-left: auto;
   margin-right: auto;
@@ -166,13 +171,8 @@ body {
   display: block;
   clear: both;
 }
-/* line 37, sass/b-layout/_base.scss */
-.content-area .content-footer {
-  background-color: rgba(30, 64, 102, 0.3);
-}
-/* line 40, sass/b-layout/_base.scss */
+/* line 41, sass/b-layout/_base.scss */
 .content-area .content-footer .content-footer-wrapper {
-  background-color: rgba(30, 64, 102, 0.3);
   max-width: 1000px;
   margin-left: auto;
   margin-right: auto;
@@ -184,11 +184,7 @@ body {
   clear: both;
 }
 
-/* line 2, sass/b-layout/_header.scss */
-.main-header {
-  background-color: rgba(89, 0, 30, 0.2);
-}
-/* line 4, sass/b-layout/_header.scss */
+/* line 3, sass/b-layout/_header.scss */
 .main-header .main-header-wrapper {
   max-width: 1000px;
   margin-left: auto;
@@ -210,33 +206,217 @@ body {
   display: block;
   clear: both;
 }
-/* line 17, sass/b-layout/_header.scss */
+/* line 16, sass/b-layout/_header.scss */
 .main-header .main-header-wrapper .header-content {
   text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.4);
   text-shadow: 0px 1px 2px 1px rgba(0, 0, 0, 0.4);
 }
-/* line 19, sass/b-layout/_header.scss */
+/* line 18, sass/b-layout/_header.scss */
 .main-header .main-header-wrapper .header-content .site-title {
   font-size: 34px;
   font-size: 2.125rem;
   text-transform: uppercase;
   color: #f2f2f2;
 }
-/* line 26, sass/b-layout/_header.scss */
+/* line 25, sass/b-layout/_header.scss */
 .main-header .main-header-wrapper .header-content .sunset-logo {
   display: block;
   margin: 0px auto;
   width: 150px;
   height: auto;
 }
-/* line 31, sass/b-layout/_header.scss */
+/* line 30, sass/b-layout/_header.scss */
 .main-header .main-header-wrapper .header-content .sunset-logo .zoom {
   fill: #f2f2f2;
 }
-/* line 35, sass/b-layout/_header.scss */
+/* line 34, sass/b-layout/_header.scss */
 .main-header .main-header-wrapper .header-content .site-description {
   color: #e6e6e6;
   margin-top: 1em;
+}
+
+/* line 5, sass/b-layout/_blog.scss */
+.blog-section .content-header-wrapper {
+  padding: 2em 0px;
+  display: block;
+}
+/* line 8, sass/b-layout/_blog.scss */
+.blog-section .content-header-wrapper .entry-title {
+  display: block;
+  text-align: center;
+  font-weight: 300;
+  text-transform: uppercase;
+  font-size: 40px;
+  font-size: 2.5rem;
+  padding: 0.5em 0px;
+  color: #333333;
+  text-shadow: 0px 1px 0px #cccccc;
+  text-shadow: 0px 1px 0px true #cccccc;
+}
+/* line 18, sass/b-layout/_blog.scss */
+.blog-section .content-header-wrapper .entry-title a {
+  text-decoration: none;
+  color: #4d4d4d;
+  -webkit-transition: color 0.3s ease;
+  -moz-transition: color 0.3s ease;
+  -ms-transition: color 0.3s ease;
+  -o-transition: color 0.3s ease;
+  transition: color 0.3s ease;
+}
+/* line 22, sass/b-layout/_blog.scss */
+.blog-section .content-header-wrapper .entry-title a:hover, .blog-section .content-header-wrapper .entry-title a:focus {
+  text-decoration: none;
+  color: #000000;
+}
+/* line 29, sass/b-layout/_blog.scss */
+.blog-section .content-header-wrapper .entry-meta {
+  display: block;
+  width: auto;
+  padding: 0.5em 0px;
+  margin: 0px auto !important;
+  text-align: center;
+}
+/* line 40, sass/b-layout/_blog.scss */
+.blog-section .content-body-wrapper .standard-featured-link {
+  display: block;
+  position: relative;
+}
+/* line 46, sass/b-layout/_blog.scss */
+.blog-section .content-body-wrapper .standard-featured-link:hover .standard-featured-image:after, .blog-section .content-body-wrapper .standard-featured-link:focus .standard-featured-image:after {
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  background-color: transparent;
+}
+/* line 53, sass/b-layout/_blog.scss */
+.blog-section .content-body-wrapper .standard-featured-link .standard-featured-image {
+  display: block;
+  height: 330px;
+  position: relative;
+}
+/* line 57, sass/b-layout/_blog.scss */
+.blog-section .content-body-wrapper .standard-featured-link .standard-featured-image:after {
+  content: '';
+  position: absolute;
+  display: block;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  background-color: rgba(0, 0, 0, 0.2);
+  box-shadow: inset 0 0 15px rgba(0, 0, 0, 0.3);
+}
+/* line 69, sass/b-layout/_blog.scss */
+.blog-section .content-body-wrapper .standard-featured-link .standard-featured-image img {
+  width: 100%;
+  height: auto;
+}
+/* line 77, sass/b-layout/_blog.scss */
+.blog-section .content-body-wrapper .entry-excerpt {
+  margin: 2em 0px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+}
+/* line 84, sass/b-layout/_blog.scss */
+.blog-section .content-body-wrapper .button-container {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-size: 0.875rem;
+  font-weight: 300;
+  color: gray;
+  padding: 10px 15px;
+  border-radius: 4px;
+  border: 1px solid #e6e6e6;
+  width: 100px;
+  margin: 0px auto;
+  -webkit-transition: border 0.5s ease;
+  -moz-transition: border 0.5s ease;
+  -ms-transition: border 0.5s ease;
+  -o-transition: border 0.5s ease;
+  transition: border 0.5s ease;
+}
+/* line 97, sass/b-layout/_blog.scss */
+.blog-section .content-body-wrapper .button-container:hover, .blog-section .content-body-wrapper .button-container:focus {
+  cursor: pointer;
+  border: 1px solid #333333;
+  -webkit-transition: border 0.5s ease;
+  -moz-transition: border 0.5s ease;
+  -ms-transition: border 0.5s ease;
+  -o-transition: border 0.5s ease;
+  transition: border 0.5s ease;
+}
+/* line 102, sass/b-layout/_blog.scss */
+.blog-section .content-body-wrapper .button-container:hover .btn-default, .blog-section .content-body-wrapper .button-container:focus .btn-default {
+  color: #000000;
+}
+/* line 110, sass/b-layout/_blog.scss */
+.blog-section .content-footer-wrapper {
+  margin-top: 1em;
+  padding: 1em 0px;
+  border-bottom: 4px solid #e6e6e6;
+}
+/* line 114, sass/b-layout/_blog.scss */
+.blog-section .content-footer-wrapper a {
+  display: inline-block;
+  text-transform: uppercase;
+  padding: 0px 4px;
+  font-size: 12px;
+  font-size: 0.75rem;
+}
+/* line 121, sass/b-layout/_blog.scss */
+.blog-section .content-footer-wrapper .footer-tags {
+  display: inline;
+  float: left;
+  -webkit-transition: all 0.8s ease;
+  -moz-transition: all 0.8s ease;
+  -ms-transition: all 0.8s ease;
+  -o-transition: all 0.8s ease;
+  transition: all 0.8s ease;
+}
+/* line 127, sass/b-layout/_blog.scss */
+.blog-section .content-footer-wrapper .footer-tags:hover .fa-tag, .blog-section .content-footer-wrapper .footer-tags:focus .fa-tag {
+  color: #000000;
+  cursor: pointer;
+  -webkit-transition: all 0.8s ease;
+  -moz-transition: all 0.8s ease;
+  -ms-transition: all 0.8s ease;
+  -o-transition: all 0.8s ease;
+  transition: all 0.8s ease;
+}
+/* line 133, sass/b-layout/_blog.scss */
+.blog-section .content-footer-wrapper .footer-tags .fa-tag {
+  margin-right: 5px;
+  color: #b3b3b3;
+  -webkit-transition: all 0.8s ease;
+  -moz-transition: all 0.8s ease;
+  -ms-transition: all 0.8s ease;
+  -o-transition: all 0.8s ease;
+  transition: all 0.8s ease;
+}
+/* line 137, sass/b-layout/_blog.scss */
+.blog-section .content-footer-wrapper .footer-tags .fa-tag:hover, .blog-section .content-footer-wrapper .footer-tags .fa-tag:focus {
+  color: #000000;
+  cursor: pointer;
+  -moz-animation: all, 0.8s;
+  -webkit-animation: all, 0.8s;
+  animation: all, 0.8s;
+}
+/* line 145, sass/b-layout/_blog.scss */
+.blog-section .content-footer-wrapper .footer-comments {
+  display: inline;
+  float: right;
+}
+/* line 148, sass/b-layout/_blog.scss */
+.blog-section .content-footer-wrapper .footer-comments .fa-commenting {
+  margin-left: 0.5em;
 }
 
 /*--------------------------------------------------------------

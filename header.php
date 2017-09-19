@@ -14,8 +14,8 @@
 </head>
 
 <body <?php body_class(); ?>>
-  <header class="main-header header-container">
-    <div class="main-header-wrapper background-image" style="background-image: url(<?php header_image(); ?>);">
+  <header class="main-header header-container background-image" style="background-image: url(<?php header_image(); ?>);">
+    <div class="main-header-wrapper">
       <!-- HEADER CONTENT -->
       <div class="header-content">
         <h1 class="site-title"><?php bloginfo('name'); ?></h1>

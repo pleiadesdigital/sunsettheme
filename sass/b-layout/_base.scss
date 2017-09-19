@@ -5,40 +5,40 @@ body {
   color: $black;
   font-size: 16px;
 }
-
+a {
+  text-decoration: none;
+  color: $grey;
+  @include animate(color, 0.3s);
+  &:hover,
+  &:focus {
+    color: $carbon;
+  } //&:hover, &:focus
+} //a
 .background-image {
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
 }
 
-
 // CONTENT LAYOUT
 .content-area {
   // CONTENT HEADER
   .content-header {
-    background-color: rgba($pink, 0.3);
     .content-header-wrapper {
-      background-color: rgba($pink, 0.3);
       @include container();
     } //.content-header-wrapper
   } //.content-header
 
     // CONTENT SECTION
   .content-body {
-    background-color: rgba(#6CCCAE, 0.3);
     .content-body-wrapper {
-      background-color: rgba(#6CCCAE, 0.3);
       @include container();
     } //.content-body-wrapper
   } //.content-body
 
   // CONTENT FOOTER
   .content-footer {
-    background-color: rgba(#1E4066, 0.3);
-
     .content-footer-wrapper {
-      background-color: rgba(#1E4066, 0.3);
       @include container();
     } //.content-footer-wrapper
   } //.content-footer

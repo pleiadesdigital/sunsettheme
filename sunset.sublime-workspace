@@ -1,0 +1,220 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"mysqli_fet",
+				"mysqli_fetch_assoc〔function〕"
+			],
+			[
+				"mysqli_conne",
+				"mysqli_connect_errno〔function〕"
+			],
+			[
+				"mysqli_connect",
+				"mysqli_connect_errno〔function〕"
+			],
+			[
+				"mysqli_fe",
+				"mysqli_fetch_assoc〔function〕"
+			],
+			[
+				"subject",
+				"$subject_set〔variable〕"
+			],
+			[
+				"mysql",
+				"mysqli_close〔function〕"
+			],
+			[
+				"DB_",
+				"DB_USER〔constant〕"
+			],
+			[
+				"db",
+				"$dbpass〔variable〕"
+			],
+			[
+				"mysqli",
+				"mysqli_connect〔function〕"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 354.0,
+		"last_filter": "pack",
+		"selected_items":
+		[
+			[
+				"pack",
+				"Package Control: List Packages"
+			]
+		],
+		"width": 592.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/Users/ronyortiz/Sites/training2017/sunset/wp-content/themes/sunsettheme"
+	],
+	"file_history":
+	[
+		"/Users/ronyortiz/Sites/training2017/php2018/globe_bank/private/shared/staff_footer.php",
+		"/Users/ronyortiz/Sites/training2017/php2018/globe_bank/public/staff/pages/index.php",
+		"/Users/ronyortiz/Sites/training2017/php2018/globe_bank/public/staff/subjects/index.php",
+		"/Users/ronyortiz/Sites/training2017/php2018/globe_bank/private/database.php",
+		"/Users/ronyortiz/Library/Application Support/Sublime Text 3/Packages/User/Happy happy joy joy 2.tmTheme",
+		"/Users/ronyortiz/Sites/training2017/php2018/globe_bank/private/db_credentials.php",
+		"/Users/ronyortiz/Sites/training2017/php2018/globe_bank/db_connect.php",
+		"/Users/ronyortiz/Sites/training2017/php2018/globe_bank/private/initialize.php",
+		"/Users/ronyortiz/Library/Application Support/Sublime Text 3/Packages/User/Goldfish.tmTheme",
+		"/Users/ronyortiz/Library/Application Support/Sublime Text 3/Packages/User/Glowfish.tmTheme",
+		"/Users/ronyortiz/Library/Application Support/Sublime Text 3/Packages/User/GlitterBomb.tmTheme",
+		"/Users/ronyortiz/Library/Application Support/Sublime Text 3/Packages/User/Fade to Grey.tmTheme"
+	],
+	"find":
+	{
+		"height": 0.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 0.0
+	},
+	"input":
+	{
+		"height": 66.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "sunset.sublime-project",
+	"replace":
+	{
+		"height": 0.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 215.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

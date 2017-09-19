@@ -1,3 +1,172 @@
-.content-area {
+// MAIN STYLES REGULAR SIZE
 
-}
+  .blog-section {
+    // HEADER
+    .content-header-wrapper {
+      padding: 2em 0px;
+      display: block;
+      .entry-title {
+        display: block;
+        text-align: center;
+        font-weight: $thin;
+        text-transform: uppercase;
+        font-size: 40px;
+        font-size: 2.5rem;
+        padding: 0.5em 0px;
+        color: $carbon;
+        @include single-text-shadow(0px, 1px, 0px, true, $midsilver);
+        a {
+          text-decoration: none;
+          color: $darkgrey;
+          @include animate(color, 0.3s);
+          &:hover,
+          &:focus {
+            text-decoration: none;
+            color: $black;
+          } //&:hover....
+        } //a
+      } //.entry-title
+      .entry-meta {
+        display: block;
+        width: auto;
+        padding: 0.5em 0px;
+        margin: 0px auto !important;
+        text-align: center;
+      }
+
+    } //.content-header-wrapper
+    // CONTENT
+    .content-body-wrapper {
+      .standard-featured-link { //a
+        display: block;
+        position: relative;
+        &:hover,
+        &:focus {
+          .standard-featured-image{
+            &:after {
+              @include animate(all, 0.3s);
+              background-color: rgba($black, 0);
+            }
+          }
+        }
+        // IMAGE
+        .standard-featured-image {
+          display: block;
+          height: 330px;
+          position: relative;
+          &:after {
+            content: '';
+            position: absolute;
+            display: block;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            @include animate(all, 0.3s);
+            background-color: rgba($black, 0.2);
+            box-shadow: inset 0 0 15px rgba($black, 0.3);
+          } //&:after
+          img {
+            width: 100%;
+            height: auto;
+          } //img
+        } //.standard-featured-image
+      } //.standard-featured-link
+
+      // EXCERPT
+      .entry-excerpt {
+        margin: 2em 0px;
+        line-height: 1.5;
+        letter-spacing: 0.02em;
+      } //.entry-excerpt
+
+      // BUTTON
+      .button-container {
+        text-align: center;
+        text-transform: uppercase;
+        font-size: 14px;
+        font-size: 0.875rem;
+        font-weight: $thin;
+        color: $lightgrey;
+        padding: 10px 15px;
+        border-radius: 4px;
+        border: 1px solid $lightsilver;
+        width: 100px;
+        margin: 0px auto;
+        @include animate(border, 0.5s);
+        &:hover,
+        &:focus {
+          cursor: pointer;
+           border: 1px solid $carbon;
+           @include animate(border, 0.5s);
+          .btn-default {
+            color: $black;
+          }
+        }
+      } //.button-container
+
+    } //.content-body-wrapper
+    // FOOTER
+    .content-footer-wrapper {
+      margin-top: 1em;
+      padding: 1em 0px;
+      border-bottom: 4px solid $lightsilver;
+      a {
+        display: inline-block;
+        text-transform: uppercase;
+        padding: 0px 4px;
+        font-size: 12px;
+        font-size: 0.75rem;
+      } //a
+      .footer-tags {
+        display: inline;
+        float: left;
+        @include animate(all, 0.8s);
+        &:hover,
+        &:focus {
+          .fa-tag {
+            color: $black;
+            cursor: pointer;
+            @include animate(all, 0.8s);
+          }
+        }
+        .fa-tag {
+          margin-right: 5px;
+          color: $darksilver;
+          @include animate(all, 0.8s);
+          &:hover,
+          &:focus {
+            color: $black;
+            cursor: pointer;
+            @include animation(all, 0.8s);
+          } //&:hover, &:focus
+        } //.fa-tag
+      } //.footer-tags
+      .footer-comments {
+        display: inline;
+        float: right;
+        .fa-commenting {
+          margin-left: 0.5em;
+        } //fa-commenting
+      } //.footer-comments
+
+    } //.content-footer-wrapper
+
+  } //.blog-section
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
