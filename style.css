@@ -420,8 +420,79 @@ a:hover, a:focus {
 }
 
 /*--------------------------------------------------------------
-C. Elements
+C. Post Formast
 --------------------------------------------------------------*/
+/* line 2, sass/c-elements/_postformats.scss */
+.sunset-format-image {
+  margin-top: 50px;
+}
+/* line 4, sass/c-elements/_postformats.scss */
+.sunset-format-image .content-header-wrapper {
+  position: relative;
+  height: 600px;
+}
+/* line 8, sass/c-elements/_postformats.scss */
+.sunset-format-image .content-header-wrapper .entry-title {
+  color: #FFFFFF;
+  text-shadow: 0px 1px 0px #333333;
+  text-shadow: 0px 1px 0px true #333333;
+}
+/* line 11, sass/c-elements/_postformats.scss */
+.sunset-format-image .content-header-wrapper .entry-title a {
+  color: #e6e6e6;
+}
+/* line 13, sass/c-elements/_postformats.scss */
+.sunset-format-image .content-header-wrapper .entry-title a:hover, .sunset-format-image .content-header-wrapper .entry-title a:focus {
+  color: #FFFFFF;
+}
+/* line 20, sass/c-elements/_postformats.scss */
+.sunset-format-image .content-header-wrapper .entry-meta {
+  color: #FFFFFF;
+  font-size: 14px;
+  font-size: 0.875rem;
+  text-shadow: 0px 1px 0px #333333;
+  text-shadow: 0px 1px 0px true #333333;
+}
+/* line 27, sass/c-elements/_postformats.scss */
+.sunset-format-image .content-header-wrapper .entry-meta .posted-on a,
+.sunset-format-image .content-header-wrapper .entry-meta .posted-in a {
+  color: #cccccc;
+  font-weight: 400;
+}
+/* line 30, sass/c-elements/_postformats.scss */
+.sunset-format-image .content-header-wrapper .entry-meta .posted-on a:hover, .sunset-format-image .content-header-wrapper .entry-meta .posted-on a:focus,
+.sunset-format-image .content-header-wrapper .entry-meta .posted-in a:hover,
+.sunset-format-image .content-header-wrapper .entry-meta .posted-in a:focus {
+  color: #FFFFFF;
+}
+/* line 38, sass/c-elements/_postformats.scss */
+.sunset-format-image .content-header-wrapper .image-caption {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 0px 4em;
+  background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjAuMCIgeDI9IjAuNSIgeTI9IjEuMCI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzAyMDAwMCIgc3RvcC1vcGFjaXR5PSIwLjAiLz48c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMwMDAwMDAiIHN0b3Atb3BhY2l0eT0iMC41Ii8+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsbD0idXJsKCNncmFkKSIgLz48L3N2Zz4g');
+  background-size: 100%;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, rgba(2, 0, 0, 0)), color-stop(100%, rgba(0, 0, 0, 0.5)));
+  background-image: -moz-linear-gradient(top, rgba(2, 0, 0, 0) 0%, rgba(0, 0, 0, 0.5) 100%);
+  background-image: -webkit-linear-gradient(top, rgba(2, 0, 0, 0) 0%, rgba(0, 0, 0, 0.5) 100%);
+  background-image: linear-gradient(to bottom, rgba(2, 0, 0, 0) 0%, rgba(0, 0, 0, 0.5) 100%);
+  text-shadow: 0px 1px 0px #333333;
+  text-shadow: 0px 1px 0px true #333333;
+}
+/* line 48, sass/c-elements/_postformats.scss */
+.sunset-format-image .content-header-wrapper .image-caption p {
+  line-height: 1.5;
+  margin: 20px 0px;
+}
+/* line 55, sass/c-elements/_postformats.scss */
+.sunset-format-image .content-footer-wrapper {
+  margin-top: 0px;
+}
+
 /* Font Icon */
 /*--------------------------------------------------------------
 D. Navigation
