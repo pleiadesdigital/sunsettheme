@@ -4,6 +4,66 @@
 		"selected_items":
 		[
 			[
+				"padd",
+				"padding-bottom"
+			],
+			[
+				"inl",
+				"inline-block"
+			],
+			[
+				"att",
+				"$attachment〔variable〕"
+			],
+			[
+				"atta",
+				"$attachements〔variable〕"
+			],
+			[
+				"for",
+				"foreach\tforeach …"
+			],
+			[
+				"margin",
+				"margin"
+			],
+			[
+				"marg",
+				"margin-right"
+			],
+			[
+				"border",
+				"border-radius"
+			],
+			[
+				"text",
+				"text-align"
+			],
+			[
+				"bacl",
+				"background-color"
+			],
+			[
+				"pos",
+				"position"
+			],
+			[
+				"backgro",
+				"background-color"
+			],
+			[
+				"di",
+				"display"
+			],
+			[
+				"wp_get_attac",
+				"wp_get_attachment_url"
+			],
+			[
+				"wid",
+				"width"
+			],
+			[
 				"mysqli_fet",
 				"mysqli_fetch_assoc〔function〕"
 			],
@@ -80,15 +140,34 @@
 	},
 	"expanded_folders":
 	[
-		"/Users/ronyortiz/Sites/training2017/sunset/wp-content/themes/sunsettheme"
+		"/Users/ronyortiz/Sites/training2017/sunset/wp-content/themes/sunsettheme",
+		"/Users/ronyortiz/Sites/training2017/sunset/wp-content/themes/sunsettheme/sass",
+		"/Users/ronyortiz/Sites/training2017/sunset/wp-content/themes/sunsettheme/sass/b-layout"
 	],
 	"file_history":
 	[
+		"/Users/ronyortiz/Sites/training2017/sunset/wp-content/themes/sunsettheme/template-parts/content-audio.php",
+		"/Users/ronyortiz/Sites/training2017/sunset/wp-content/themes/sunsettheme/inc/theme-support.php",
+		"/Users/ronyortiz/Sites/training2017/sunset/wp-content/themes/sunsettheme/sass/b-layout/_blog.scss",
+		"/Users/ronyortiz/Sites/training2017/sunset/wp-content/themes/sunsettheme/sass/c-elements/_postformats.scss",
+		"/Users/ronyortiz/Library/Application Support/Sublime Text 3/Packages/User/Happy happy joy joy 2.tmTheme",
+		"/Users/ronyortiz/Library/Application Support/Sublime Text 3/Packages/User/Last Night.tmTheme",
+		"/Users/ronyortiz/Sites/training2017/sunset/wp-content/themes/sunsettheme/template-parts/content.php",
+		"/Users/ronyortiz/Sites/training2017/sunset/wp-content/themes/sunsettheme/template-parts/content-image.php",
+		"/Users/ronyortiz/Sites/training2017/sunset/wp-content/themes/sunsettheme/sass/style.scss",
+		"/Users/ronyortiz/Sites/training2017/sunset/wp-content/themes/sunsettheme/sass/c-elements/_formatting.scss",
+		"/Users/ronyortiz/Sites/training2017/sunset/wp-content/themes/sunsettheme/home.php",
+		"/Users/ronyortiz/Sites/training2017/sunset/wp-content/themes/sunsettheme/footer.php",
+		"/Users/ronyortiz/Sites/training2017/sunset/wp-content/themes/sunsettheme/header.php",
+		"/Users/ronyortiz/Sites/training2017/sunset/wp-content/themes/sunsettheme/sass/h-variables/_colors.scss",
+		"/Users/ronyortiz/Sites/training2017/sunset/wp-content/themes/sunsettheme/sass/b-layout/_header.scss",
+		"/Users/ronyortiz/Sites/training2017/sunset/wp-content/themes/sunsettheme/sass/b-layout/_base.scss",
+		"/Users/ronyortiz/Sites/training2017/sunset/wp-content/themes/sunsettheme/sass/h-variables/_fonts.scss",
+		"/Users/ronyortiz/Sites/training2017/sunset/wp-content/themes/sunsettheme/sass/h-variables/_mixins.scss",
 		"/Users/ronyortiz/Sites/training2017/php2018/globe_bank/private/shared/staff_footer.php",
 		"/Users/ronyortiz/Sites/training2017/php2018/globe_bank/public/staff/pages/index.php",
 		"/Users/ronyortiz/Sites/training2017/php2018/globe_bank/public/staff/subjects/index.php",
 		"/Users/ronyortiz/Sites/training2017/php2018/globe_bank/private/database.php",
-		"/Users/ronyortiz/Library/Application Support/Sublime Text 3/Packages/User/Happy happy joy joy 2.tmTheme",
 		"/Users/ronyortiz/Sites/training2017/php2018/globe_bank/private/db_credentials.php",
 		"/Users/ronyortiz/Sites/training2017/php2018/globe_bank/db_connect.php",
 		"/Users/ronyortiz/Sites/training2017/php2018/globe_bank/private/initialize.php",
@@ -99,13 +178,15 @@
 	],
 	"find":
 	{
-		"height": 0.0
+		"height": 28.0
 	},
 	"find_in_files":
 	{
-		"height": 0.0,
+		"height": 158.0,
 		"where_history":
 		[
+			"<project>",
+			""
 		]
 	},
 	"find_state":
@@ -113,6 +194,8 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"header_image",
+			".main-header"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -137,7 +220,7 @@
 	],
 	"incremental_find":
 	{
-		"height": 0.0
+		"height": 28.0
 	},
 	"input":
 	{
@@ -174,7 +257,7 @@
 	"project": "sunset.sublime-project",
 	"replace":
 	{
-		"height": 0.0
+		"height": 52.0
 	},
 	"save_all_on_build": true,
 	"select_file":
@@ -211,7 +294,7 @@
 	"show_minimap": true,
 	"show_open_files": false,
 	"show_tabs": true,
-	"side_bar_visible": true,
+	"side_bar_visible": false,
 	"side_bar_width": 215.0,
 	"status_bar_visible": true,
 	"template_settings":
