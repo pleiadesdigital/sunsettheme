@@ -1,8 +1,9 @@
 // SITE NAVIGATION
 
 .main-header {
-  .main-header-wrapper {
-    .header-nav {
+  .header-nav {
+    position: relative;
+    .header-nav-wrapper {
       display: block;
       width: 100%;
       position: absolute;
@@ -59,7 +60,6 @@
           }
         } //li
       } //.top-navigation { //ul
-    } //.header-nav
-
-  } //.main-header-wrapper
+    } //.header-nav-wrapper
+  } //.header-nav
 } //.main-header

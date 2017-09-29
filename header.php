@@ -24,17 +24,19 @@
 
       </div><!-- class="header-content" -->
       <!-- TOP NAVIGATION -->
-      <nav class="header-nav">
-        <?php
-          wp_nav_menu(array(
-            'theme_location'    => 'primary',
-            'container'         => false,
-            'menu_class'        => 'top-navigation',
-            'walker'            => new Sunset_Walker_Nav_Primary()
-          ));
-        ?>
-      </nav>
-
     </div><!-- class="main-header-wrapper" -->
+    <nav class="header-nav">
+      <div class="header-nav-wrapper">
+      <?php
+        wp_nav_menu(array(
+          'theme_location'    => 'primary',
+          'container'         => false,
+          'menu_class'        => 'top-navigation',
+          'walker'            => new Sunset_Walker_Nav_Primary()
+        ));
+      ?>
+      </div><!-- class="header-nav-wrapper" -->
+    </nav><!-- class="header-nav" -->
+
   </header><!-- class="main-header header-container" -->
 

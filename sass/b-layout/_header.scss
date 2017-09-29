@@ -4,7 +4,7 @@
     @include container();
     position: relative;
     display: block;
-    height: 326px;
+    height: 250px;
     text-align: center;
     @include flexbox((
       display: flex,

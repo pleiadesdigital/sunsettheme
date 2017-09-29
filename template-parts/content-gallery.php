@@ -1,11 +1,45 @@
-<?php /* Standard Post Format */ ?>
+<?php /* Gallery Post Format */ ?>
 
 
-<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+<article id="post-<?php the_ID(); ?>" <?php post_class('sunset-format-gallery'); ?>>
 
   <!-- CONTENT HEADER -->
   <header class="entry-header content-header blog-header">
     <div class="content-header-wrapper">
+      <?php if (sunset_get_attachment()) : ?>
+        <?php
+        $attachments = sunset_get_attachment(7);
+        //var_dump($attachments);
+        ?>
+      <!-- CAROUSEL -->
+      <section id="post-gallery-<?php the_ID(); ?>">
+        <div id="Glide" class="glide">
+          <!-- ARROWS -->
+          <div class="glide__arrows" role="listbox">
+            <button class="glide__arrow prev" data-glide-dir="<"></button>
+            <button class="glide__arrow next" data-glide-dir=">"></button>
+          </div><!-- class="glide__arrows" -->
+
+          <!-- SLIDES -->
+          <div class="glide__wrapper">
+            <ul class="glide__track">
+            <?php
+            $i = 0;
+            foreach ($attachments as $attachment) :
+              $active = ($i == 0 ? ' active' : '');
+            ?>
+              <li class="glide__slide"><img src="<?php echo wp_get_attachment_url($attachment->ID); ?>"></li>
+            <?php $i++; endforeach; ?>
+            </ul><!-- class="glide__track" -->
+          </div><!-- class="glide__wrapper" -->
+
+          <!-- BULLETS -->
+          <div class="glide__bullets"></div>
+        </div>
+      </section>
+
+      <?php endif; ?>
+
       <?php
         if (is_single()) {
           the_title('<h1 class="entry-title">', '</h1>');
@@ -24,15 +58,6 @@
   <!-- CONTENT SECTION 1 -->
   <div class="entry-content content-body blog-section-1">
     <div class="content-body-wrapper">
-
-    <?php if (sunset_get_attachment()) : ?>
-
-      <a class="standard-featured-link" href="<?php the_permalink(); ?>">
-        <div class="standard-featured-image background-image" style="background-image: url(<?php echo sunset_get_attachment(); ?>)">
-        </div>
-      </a>
-
-    <?php endif; ?>
 
       <div class="entry-excerpt">
         <?php the_excerpt(); ?>

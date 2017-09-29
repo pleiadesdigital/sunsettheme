@@ -191,7 +191,7 @@ a:hover, a:focus {
   margin-right: auto;
   position: relative;
   display: block;
-  height: 326px;
+  height: 250px;
   text-align: center;
   display: -webkit-flex;
   -webkit-justify-content: center;
@@ -421,30 +421,30 @@ C. Post Formast
 }
 
 /* IMAGE POST FORMAT */
-/* line 149, sass/c-elements/_postformats.scss */
+/* line 148, sass/c-elements/_postformats.scss */
 .sunset-format-image {
   margin-top: 50px;
 }
-/* line 151, sass/c-elements/_postformats.scss */
+/* line 150, sass/c-elements/_postformats.scss */
 .sunset-format-image .content-header-wrapper {
   position: relative;
   height: 600px;
 }
-/* line 155, sass/c-elements/_postformats.scss */
+/* line 154, sass/c-elements/_postformats.scss */
 .sunset-format-image .content-header-wrapper .entry-title {
   color: #FFFFFF;
   text-shadow: 0px 1px 0px #333333;
   text-shadow: 0px 1px 0px true #333333;
 }
-/* line 158, sass/c-elements/_postformats.scss */
+/* line 157, sass/c-elements/_postformats.scss */
 .sunset-format-image .content-header-wrapper .entry-title a {
   color: #e6e6e6;
 }
-/* line 160, sass/c-elements/_postformats.scss */
+/* line 159, sass/c-elements/_postformats.scss */
 .sunset-format-image .content-header-wrapper .entry-title a:hover, .sunset-format-image .content-header-wrapper .entry-title a:focus {
   color: #FFFFFF;
 }
-/* line 167, sass/c-elements/_postformats.scss */
+/* line 166, sass/c-elements/_postformats.scss */
 .sunset-format-image .content-header-wrapper .entry-meta {
   color: #FFFFFF;
   font-size: 14px;
@@ -452,19 +452,19 @@ C. Post Formast
   text-shadow: 0px 1px 0px #333333;
   text-shadow: 0px 1px 0px true #333333;
 }
-/* line 174, sass/c-elements/_postformats.scss */
+/* line 173, sass/c-elements/_postformats.scss */
 .sunset-format-image .content-header-wrapper .entry-meta .posted-on a,
 .sunset-format-image .content-header-wrapper .entry-meta .posted-in a {
   color: #cccccc;
   font-weight: 400;
 }
-/* line 177, sass/c-elements/_postformats.scss */
+/* line 176, sass/c-elements/_postformats.scss */
 .sunset-format-image .content-header-wrapper .entry-meta .posted-on a:hover, .sunset-format-image .content-header-wrapper .entry-meta .posted-on a:focus,
 .sunset-format-image .content-header-wrapper .entry-meta .posted-in a:hover,
 .sunset-format-image .content-header-wrapper .entry-meta .posted-in a:focus {
   color: #FFFFFF;
 }
-/* line 185, sass/c-elements/_postformats.scss */
+/* line 184, sass/c-elements/_postformats.scss */
 .sunset-format-image .content-header-wrapper .image-caption {
   position: absolute;
   left: 0;
@@ -482,45 +482,45 @@ C. Post Formast
   text-shadow: 0px 1px 0px #333333;
   text-shadow: 0px 1px 0px true #333333;
 }
-/* line 195, sass/c-elements/_postformats.scss */
+/* line 194, sass/c-elements/_postformats.scss */
 .sunset-format-image .content-header-wrapper .image-caption p {
   line-height: 1.5;
   margin: 20px 0px;
 }
-/* line 202, sass/c-elements/_postformats.scss */
+/* line 201, sass/c-elements/_postformats.scss */
 .sunset-format-image .content-footer-wrapper {
   margin-top: 0px;
 }
 
 /* IMAGE POST FORMAT */
-/* line 209, sass/c-elements/_postformats.scss */
+/* line 208, sass/c-elements/_postformats.scss */
 .sunset-format-audio .content-header-wrapper {
   padding-bottom: 0px;
 }
-/* line 211, sass/c-elements/_postformats.scss */
+/* line 210, sass/c-elements/_postformats.scss */
 .sunset-format-audio .content-header-wrapper .entry-title {
   display: inline-block;
   font-size: 30px;
   font-size: 1.875rem;
   margin-right: 0.5em;
 }
-/* line 217, sass/c-elements/_postformats.scss */
+/* line 216, sass/c-elements/_postformats.scss */
 .sunset-format-audio .content-header-wrapper .entry-meta {
   display: inline-block;
 }
-/* line 223, sass/c-elements/_postformats.scss */
+/* line 222, sass/c-elements/_postformats.scss */
 .sunset-format-audio .content-body-wrapper iframe {
   display: block;
   width: 100%;
   height: 80px;
   margin: 0px auto;
 }
-/* line 231, sass/c-elements/_postformats.scss */
+/* line 230, sass/c-elements/_postformats.scss */
 .sunset-format-audio .content-footer-wrapper {
   padding: 0px;
 }
 
-/* IMAGE POST FORMAT */
+/* VIDEO POST FORMAT */
 /* line 238, sass/c-elements/_postformats.scss */
 .sunset-format-video .content-header-wrapper {
   display: flex;
@@ -547,29 +547,57 @@ C. Post Formast
   float: none;
   display: block;
 }
-/* line 263, sass/c-elements/_postformats.scss */
+/* line 264, sass/c-elements/_postformats.scss */
 .sunset-format-video .content-body-wrapper {
   margin-top: 0.5em;
 }
-/* line 265, sass/c-elements/_postformats.scss */
+/* line 266, sass/c-elements/_postformats.scss */
 .sunset-format-video .content-body-wrapper .entry-excerpt {
   margin-top: 0px;
+}
+
+/* GALLERY POST FORMAT */
+/* line 276, sass/c-elements/_postformats.scss */
+.sunset-format-gallery .content-header-wrapper ul li {
+  overflow: hidden;
+}
+/* line 279, sass/c-elements/_postformats.scss */
+.sunset-format-gallery .content-header-wrapper ul li img {
+  width: 100%;
+}
+/* line 284, sass/c-elements/_postformats.scss */
+.sunset-format-gallery .content-header-wrapper .entry-title {
+  display: block;
+  float: none;
+  width: 100%;
+  padding-bottom: 5px;
+  font-size: 30px;
+  font-size: 1.875rem;
+}
+/* line 292, sass/c-elements/_postformats.scss */
+.sunset-format-gallery .content-header-wrapper .entry-meta {
+  float: none;
+  display: block;
 }
 
 /* Font Icon */
 /*--------------------------------------------------------------
 D. Navigation
 --------------------------------------------------------------*/
-/* line 5, sass/d-navigation/_main-navigation.scss */
-.main-header .main-header-wrapper .header-nav {
+/* line 4, sass/d-navigation/_main-navigation.scss */
+.main-header .header-nav {
+  position: relative;
+}
+/* line 6, sass/d-navigation/_main-navigation.scss */
+.main-header .header-nav .header-nav-wrapper {
   display: block;
   width: 100%;
   position: absolute;
   bottom: 0;
   left: 0;
 }
-/* line 11, sass/d-navigation/_main-navigation.scss */
-.main-header .main-header-wrapper .header-nav .top-navigation {
+/* line 12, sass/d-navigation/_main-navigation.scss */
+.main-header .header-nav .header-nav-wrapper .top-navigation {
   display: flex;
   align-items: center;
   flex-wrap: nowrap;
@@ -577,12 +605,12 @@ D. Navigation
   background-color: rgba(242, 242, 242, 0.1);
   border-top: 1px solid rgba(242, 242, 242, 0.1);
 }
-/* line 18, sass/d-navigation/_main-navigation.scss */
-.main-header .main-header-wrapper .header-nav .top-navigation li {
+/* line 19, sass/d-navigation/_main-navigation.scss */
+.main-header .header-nav .header-nav-wrapper .top-navigation li {
   display: flex;
 }
-/* line 24, sass/d-navigation/_main-navigation.scss */
-.main-header .main-header-wrapper .header-nav .top-navigation li a {
+/* line 25, sass/d-navigation/_main-navigation.scss */
+.main-header .header-nav .header-nav-wrapper .top-navigation li a {
   padding: 1.5em 2em;
   color: #f2f2f2;
   text-align: center;
@@ -597,12 +625,12 @@ D. Navigation
   -webkit-transition: all, 320ms;
   transition: all, 320ms;
 }
-/* line 38, sass/d-navigation/_main-navigation.scss */
-.main-header .main-header-wrapper .header-nav .top-navigation li a:hover, .main-header .main-header-wrapper .header-nav .top-navigation li a:focus, .main-header .main-header-wrapper .header-nav .top-navigation li a:visited {
+/* line 39, sass/d-navigation/_main-navigation.scss */
+.main-header .header-nav .header-nav-wrapper .top-navigation li a:hover, .main-header .header-nav .header-nav-wrapper .top-navigation li a:focus, .main-header .header-nav .header-nav-wrapper .top-navigation li a:visited {
   background-color: rgba(51, 51, 51, 0.2);
 }
-/* line 43, sass/d-navigation/_main-navigation.scss */
-.main-header .main-header-wrapper .header-nav .top-navigation li a:after {
+/* line 44, sass/d-navigation/_main-navigation.scss */
+.main-header .header-nav .header-nav-wrapper .top-navigation li a:after {
   /* content: '';
   position: absolute;
   display: block;
@@ -612,8 +640,8 @@ D. Navigation
   height: 2px;
   background: black; */
 }
-/* line 54, sass/d-navigation/_main-navigation.scss */
-.main-header .main-header-wrapper .header-nav .top-navigation li.current-menu-item a, .main-header .main-header-wrapper .header-nav .top-navigation li.current_page_item a {
+/* line 55, sass/d-navigation/_main-navigation.scss */
+.main-header .header-nav .header-nav-wrapper .top-navigation li.current-menu-item a, .main-header .header-nav .header-nav-wrapper .top-navigation li.current_page_item a {
   text-decoration: none;
   background-color: rgba(51, 51, 51, 0.1);
   cursor: default;
