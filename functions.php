@@ -19,8 +19,6 @@ function sunset_scripts() {
   wp_enqueue_style('glide-core-css', get_template_directory_uri() . '/css/glide.core.css');
   wp_enqueue_style('glide-theme-css', get_template_directory_uri() . '/css/glide.theme.css');
   wp_enqueue_script('glide-js', get_template_directory_uri() . '/js/glide.js', array('jquery'), '', true);
-  // CUSTOM JAVASCRIPT (main.js)
-  wp_enqueue_script('sunset-app', get_template_directory_uri() . '/js/main.js', array('jquery'), '20170109', true);
 
   // FONTAWESOME
   wp_enqueue_script('pleiades17-fontawesome', 'https://use.fontawesome.com/b1403a6995.js', array(), '20170109', true);

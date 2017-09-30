@@ -557,15 +557,124 @@ C. Post Formast
 }
 
 /* GALLERY POST FORMAT */
-/* line 276, sass/c-elements/_postformats.scss */
-.sunset-format-gallery .content-header-wrapper ul li {
+/* line 277, sass/c-elements/_postformats.scss */
+.sunset-format-gallery .content-header-wrapper .glide ul li {
   overflow: hidden;
 }
-/* line 279, sass/c-elements/_postformats.scss */
-.sunset-format-gallery .content-header-wrapper ul li img {
+/* line 280, sass/c-elements/_postformats.scss */
+.sunset-format-gallery .content-header-wrapper .glide ul li img {
   width: 100%;
 }
-/* line 284, sass/c-elements/_postformats.scss */
+/* line 285, sass/c-elements/_postformats.scss */
+.sunset-format-gallery .content-header-wrapper .glide .glide__arrows {
+  margin-left: 0px;
+}
+/* line 287, sass/c-elements/_postformats.scss */
+.sunset-format-gallery .content-header-wrapper .glide .glide__arrows .container {
+  display: block;
+  background-color: transparent;
+  padding: 10px 20px;
+  line-height: 0;
+  margin-right: -80px;
+  display: relative;
+  -webkit-transition: background-color 320ms ease;
+  -moz-transition: background-color 320ms ease;
+  -ms-transition: background-color 320ms ease;
+  -o-transition: background-color 320ms ease;
+  transition: background-color 320ms ease;
+}
+/* line 295, sass/c-elements/_postformats.scss */
+.sunset-format-gallery .content-header-wrapper .glide .glide__arrows .container .thumbnail-container {
+  position: absolute;
+  display: block;
+  height: 73px;
+  width: 73px;
+  background-color: #999;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  -moz-transform: scale(0);
+  -ms-transform: scale(0);
+  -webkit-transform: scale(0);
+  transform: scale(0);
+  -webkit-transition: transform 320ms ease;
+  -moz-transition: transform 320ms ease;
+  -ms-transition: transform 320ms ease;
+  -o-transition: transform 320ms ease;
+  transition: transform 320ms ease;
+}
+/* line 305, sass/c-elements/_postformats.scss */
+.sunset-format-gallery .content-header-wrapper .glide .glide__arrows .container.prev {
+  padding-right: 90px;
+  -moz-border-radius-topright: 80px;
+  -webkit-border-top-right-radius: 80px;
+  border-top-right-radius: 80px;
+  -moz-border-radius-bottomright: 80px;
+  -webkit-border-bottom-right-radius: 80px;
+  border-bottom-right-radius: 80px;
+}
+/* line 309, sass/c-elements/_postformats.scss */
+.sunset-format-gallery .content-header-wrapper .glide .glide__arrows .container.prev .thumbnail-container {
+  right: 1px;
+  top: 1px;
+}
+/* line 314, sass/c-elements/_postformats.scss */
+.sunset-format-gallery .content-header-wrapper .glide .glide__arrows .container.next {
+  padding-left: 90px;
+  -moz-border-radius-topleft: 80px;
+  -webkit-border-top-left-radius: 80px;
+  border-top-left-radius: 80px;
+  -moz-border-radius-bottomleft: 80px;
+  -webkit-border-bottom-left-radius: 80px;
+  border-bottom-left-radius: 80px;
+}
+/* line 318, sass/c-elements/_postformats.scss */
+.sunset-format-gallery .content-header-wrapper .glide .glide__arrows .container.next .thumbnail-container {
+  left: 1px;
+  top: 1px;
+}
+/* line 323, sass/c-elements/_postformats.scss */
+.sunset-format-gallery .content-header-wrapper .glide .glide__arrows .container:hover {
+  background-color: rgba(0, 0, 0, 0.9);
+  -webkit-transition: background-color 320ms ease;
+  -moz-transition: background-color 320ms ease;
+  -ms-transition: background-color 320ms ease;
+  -o-transition: background-color 320ms ease;
+  transition: background-color 320ms ease;
+}
+/* line 326, sass/c-elements/_postformats.scss */
+.sunset-format-gallery .content-header-wrapper .glide .glide__arrows .container:hover .thumbnail-container {
+  -moz-transform: scale(1);
+  -ms-transform: scale(1);
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: transform 320ms ease;
+  -moz-transition: transform 320ms ease;
+  -ms-transition: transform 320ms ease;
+  -o-transition: transform 320ms ease;
+  transition: transform 320ms ease;
+}
+/* line 332, sass/c-elements/_postformats.scss */
+.sunset-format-gallery .content-header-wrapper .glide .glide__arrows .glide__arrow {
+  border: none;
+}
+/* line 334, sass/c-elements/_postformats.scss */
+.sunset-format-gallery .content-header-wrapper .glide .glide__arrows .glide__arrow .fa {
+  margin: 0px;
+  font-size: 55px;
+  font-weight: 100;
+  color: rgba(255, 255, 255, 0.3);
+  -webkit-transition: color 0.5s ease;
+  -moz-transition: color 0.5s ease;
+  -ms-transition: color 0.5s ease;
+  -o-transition: color 0.5s ease;
+  transition: color 0.5s ease;
+}
+/* line 340, sass/c-elements/_postformats.scss */
+.sunset-format-gallery .content-header-wrapper .glide .glide__arrows .glide__arrow .fa:hover, .sunset-format-gallery .content-header-wrapper .glide .glide__arrows .glide__arrow .fa:focus {
+  color: rgba(255, 255, 255, 0.7);
+}
+/* line 349, sass/c-elements/_postformats.scss */
 .sunset-format-gallery .content-header-wrapper .entry-title {
   display: block;
   float: none;
@@ -574,7 +683,7 @@ C. Post Formast
   font-size: 30px;
   font-size: 1.875rem;
 }
-/* line 292, sass/c-elements/_postformats.scss */
+/* line 357, sass/c-elements/_postformats.scss */
 .sunset-format-gallery .content-header-wrapper .entry-meta {
   float: none;
   display: block;

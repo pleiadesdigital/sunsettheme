@@ -16,20 +16,34 @@
         <div id="Glide" class="glide">
           <!-- ARROWS -->
           <div class="glide__arrows" role="listbox">
-            <button class="glide__arrow prev" data-glide-dir="<"></button>
-            <button class="glide__arrow next" data-glide-dir=">"></button>
+              <button class="glide__arrow container prev" data-glide-dir="<">
+                <i class="fa fa-angle-left" aria-hidden="true"></i>
+                <span class="thumbnail-container background-image"></span>
+              </button>
+              <button class="glide__arrow container next" data-glide-dir=">">
+                <i class="fa fa-angle-right" aria-hidden="true"></i>
+                <span class="thumbnail-container background-image"></span>
+              </button>
           </div><!-- class="glide__arrows" -->
 
           <!-- SLIDES -->
           <div class="glide__wrapper">
             <ul class="glide__track">
             <?php
-            $i = 0;
-            foreach ($attachments as $attachment) :
-              $active = ($i == 0 ? ' active' : '');
+              $count = count($attachments) - 1;
+              for ($i = 0; $i <= $count; $i++) :
+                $active = ($i == 0 ? ' active' : '');
+                $n = ($i == $count ? 0 : $i+1);
+                $nextImg = wp_get_attachment_thumb_url($attachments[$n]->ID);
+                $p = ($i == 0 ? $count : $i-1) ;
+                $prevImg = wp_get_attachment_thumb_url($attachments[$p]->ID);
             ?>
-              <li class="glide__slide"><img src="<?php echo wp_get_attachment_url($attachment->ID); ?>"></li>
-            <?php $i++; endforeach; ?>
+              <li class="glide__slide <?php echo $active; ?>">
+                <img src="<?php echo wp_get_attachment_url($attachments[$i]->ID); ?>">
+                <div class="hide prev-image-circle" data-image="<?php echo $prevImg ?>"></div>
+                <div class="hide next-image-circle" data-image="<?php echo $nextImg ?>"></div>
+              </li>
+            <?php endfor; ?>
             </ul><!-- class="glide__track" -->
           </div><!-- class="glide__wrapper" -->
 

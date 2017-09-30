@@ -29,6 +29,8 @@ function sunset_load_scripts() {
 
   wp_enqueue_style('raleway', 'https://fonts.googleapis.com/css?family=Playfair+Display:400,700|Raleway:300,400,600' );
 
+  // CUSTOM JAVASCRIPT (main.js)
+  wp_enqueue_script('sunset-app', get_template_directory_uri() . '/js/app.js', array('jquery'), '20170109', true);
 }
 add_action('wp_enqueue_scripts', 'sunset_load_scripts');
 

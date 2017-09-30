@@ -272,15 +272,80 @@
 /* GALLERY POST FORMAT */
 .sunset-format-gallery {
   .content-header-wrapper {
-    ul {
-      li {
-        // border: 2px solid $grey;
-        overflow: hidden;
-        img {
-          width: 100%;
-        } //img
-      } //li
-    } //ul
+    .glide {
+      ul {
+        li {
+          // border: 2px solid $grey;
+          overflow: hidden;
+          img {
+            width: 100%;
+          } //img
+        } //li
+      } //ul
+      .glide__arrows {
+        margin-left: 0px;
+        .container {
+          display: block;
+          background-color: rgba(0, 0, 0, 0);
+          padding: 10px 20px;
+          line-height: 0;
+          margin-right: -80px;
+          display: relative;
+          @include animate(background-color, 320ms);
+          .thumbnail-container {
+            position: absolute;
+            display: block;
+            height: 73px;
+            width: 73px;
+            background-color: #999;
+            @include border-radius(50%);
+            @include transform(scale(0));
+            @include animate(transform, 320ms);
+          } //.thumbnail-container
+          &.prev {
+            padding-right: 90px;
+            @include border-top-right-radius(80px);
+            @include border-bottom-right-radius(80px);
+            .thumbnail-container {
+              right: 1px;
+              top: 1px;
+            } //.thumbnail-container
+          } //&.prev
+          &.next {
+            padding-left: 90px;
+            @include border-top-left-radius(80px);
+            @include border-bottom-left-radius(80px);
+            .thumbnail-container {
+              left: 1px;
+              top: 1px;
+            } //.thumbnail-container
+          } //&.next
+          &:hover {
+            background-color: rgba(0, 0, 0, 0.9);
+            @include animate(background-color, 320ms);
+            .thumbnail-container {
+              @include transform(scale(1));
+              @include animate(transform, 320ms);
+            } // .thumbnail-container
+          } // &:hover, &:focus
+        } // .container
+        .glide__arrow {
+          border: none;
+          .fa {
+            margin: 0px;
+            font-size: 55px;
+            font-weight: 100;
+            color: rgba($white, 0.3);
+            @include animate(color, 0.5s);
+            &:hover,
+            &:focus {
+              color: rgba($white, 0.7);
+            } //&:hover, &:focus
+          } //.fa
+        } //.glide__arrow
+      } //.glide__arrows
+    } //.glide
+
     .entry-title {
       display: block;
       float: none;
