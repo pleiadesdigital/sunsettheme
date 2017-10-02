@@ -743,6 +743,73 @@ C. Post Formast
   transform: translateY(0%);
 }
 
+/* QUOTE POST FORMAT */
+/* line 402, sass/c-elements/_postformats.scss */
+.sunset-format-quote .the-quote {
+  display: block;
+  margin-top: 2em;
+  margin-bottom: 1em;
+}
+@media (min-width: 740px) {
+  /* line 402, sass/c-elements/_postformats.scss */
+  .sunset-format-quote .the-quote {
+    max-width: 740px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  /* line 12, ../../../../../../../../usr/local/lib/ruby/gems/2.4.0/gems/susy-2.2.12/sass/susy/output/support/_clearfix.scss */
+  .sunset-format-quote .the-quote:after {
+    content: " ";
+    display: block;
+    clear: both;
+  }
+}
+/* line 409, sass/c-elements/_postformats.scss */
+.sunset-format-quote .the-quote .quote-content {
+  text-align: center;
+  font-weight: 300;
+  text-transform: uppercase;
+  font-size: 40px;
+  font-size: 2.5rem;
+  color: #cccccc;
+  text-shadow: 0px 1px 0px #333333;
+  text-shadow: 0px 1px 0px true #333333;
+  line-height: 1.2;
+  letter-spacing: 0.04em;
+}
+/* line 420, sass/c-elements/_postformats.scss */
+.sunset-format-quote .the-quote .quote-content:before {
+  font-family: Fontawesome;
+  content: '\f10d';
+  font-size: 30px;
+  color: #e6e6e6;
+  text-shadow: 0px 1px 0px #333333;
+  text-shadow: 0px 1px 0px true #333333;
+  display: inline-block;
+  position: relative;
+}
+/* line 429, sass/c-elements/_postformats.scss */
+.sunset-format-quote .the-quote .quote-content:after {
+  font-family: Fontawesome;
+  content: '\f10e';
+  font-size: 30px;
+  color: #e6e6e6;
+  text-shadow: 0px 1px 0px #333333;
+  text-shadow: 0px 1px 0px true #333333;
+  display: inline-block;
+  position: relative;
+}
+/* line 442, sass/c-elements/_postformats.scss */
+.sunset-format-quote .the-quote-author .quote-author {
+  display: block;
+  text-align: center;
+  font-size: 22px;
+  font-size: 1.375rem;
+  font-weight: 700;
+  color: #333333;
+  letter-spacing: 0.06em;
+}
+
 /* Font Icon */
 /*--------------------------------------------------------------
 D. Navigation
