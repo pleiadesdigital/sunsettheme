@@ -80,7 +80,6 @@ function sunset_posted_footer() {
   return '<div class="post-footer-container"><div class="footer-tags">' . get_the_tag_list('<div class="tags-list"><i class="fa fa-tag" aria-hidden="true"></i>', ' ' , '</div>') . '</div><div class="footer-comments">' . $comments . '</div></div>';
 }
 
-
 // Attachment function for IMAGE Post Format
 function sunset_get_attachment($num = 1) {
   $output = '';
@@ -115,6 +114,29 @@ function sunset_get_embedded_media($type = array()) {
   }
   return $output;
 }
+
+// Gallery Post Format LOOP
+function sunset_get_bs_slides($attachments) {
+  $output = array();
+  $count = count($attachments) - 1;
+
+  for ($i = 0; $i <= $count; $i++) :
+    $active = ($i == 0 ? ' active' : '');
+    $n = ($i == $count ? 0 : $i+1);
+    $nextImg = wp_get_attachment_thumb_url($attachments[$n]->ID);
+    $p = ($i == 0 ? $count : $i-1) ;
+    $prevImg = wp_get_attachment_thumb_url($attachments[$p]->ID);
+    $output[$i] = array(
+      'class'     => $active,
+      'url'       => wp_get_attachment_url($attachments[$i]->ID),
+      'next_img'  => $nextImg,
+      'prev_img'  => $prevImg,
+      'caption'   => $attachments[$i]->post_excerpt
+    );
+  endfor;
+  return $output;
+}
+
 
 
 

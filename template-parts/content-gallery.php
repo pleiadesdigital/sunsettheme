@@ -7,17 +7,14 @@
   <header class="entry-header content-header blog-header">
     <div class="content-header-wrapper">
       <?php if (sunset_get_attachment()) : ?>
-        <?php
-        $attachments = sunset_get_attachment(7);
-        //var_dump($attachments);
-        ?>
+
       <!-- CAROUSEL -->
       <section id="post-gallery-<?php the_ID(); ?>">
         <div id="Glide" class="glide">
           <!-- ARROWS -->
           <div class="glide__arrows" role="listbox">
               <button class="glide__arrow container prev" data-glide-dir="<">
-                <i class="fa fa-angle-left" aria-hidden="true"></i>
+                <i class="fa fa-angle-left" aria-hid  den="true"></i>
                 <span class="thumbnail-container background-image"></span>
               </button>
               <button class="glide__arrow container next" data-glide-dir=">">
@@ -29,29 +26,18 @@
           <!-- SLIDES -->
           <div class="glide__wrapper">
             <ul class="glide__track">
-            <?php
-              $count = count($attachments) - 1;
-              for ($i = 0; $i <= $count; $i++) :
-                $active = ($i == 0 ? ' active' : '');
-                $n = ($i == $count ? 0 : $i+1);
-                $nextImg = wp_get_attachment_thumb_url($attachments[$n]->ID);
-                $p = ($i == 0 ? $count : $i-1) ;
-                $prevImg = wp_get_attachment_thumb_url($attachments[$p]->ID);
-            ?>
-              <li class="glide__slide <?php echo $active; ?>">
-                <img src="<?php echo wp_get_attachment_url($attachments[$i]->ID); ?>">
-                <div class="hide prev-image-circle" data-image="<?php echo $prevImg ?>"></div>
-                <div class="hide next-image-circle" data-image="<?php echo $nextImg ?>"></div>
-
+            <?php $attachments = sunset_get_bs_slides(sunset_get_attachment(7)); ?>
+              <?php foreach ($attachments as $attachment) { ?>
+              <li class="glide__slide <?php echo $attachment['class']; ?>">
+                <img src="<?php echo $attachment['url']; ?>">
+                <div class="hide prev-image-circle" data-image="<?php echo $attachment['prev_img']; ?>"></div>
+                <div class="hide next-image-circle" data-image="<?php echo $attachment['next_img']; ?>"></div>
                 <!-- CAPTION -->
                 <div class="image-caption">
-                  <p><?php echo $attachments[$i]->post_excerpt; ?></p>
+                  <p><?php echo $attachment['caption']; ?></p>
                 </div><!-- class="image-caption" -->
-
-
-
               </li>
-            <?php endfor; ?>
+              <?php } ?>
             </ul><!-- class="glide__track" -->
           </div><!-- class="glide__wrapper" -->
 
