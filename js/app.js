@@ -3,9 +3,11 @@ jQuery(document).ready(function($){
   // GLIDE SLIDER SETUP
   $("#Glide").glide({
     type: 'carousel',
-    autoplay: 10000,
-    paddings: 0,
-    animationDuration: 1000
+    // autoplay: 10000,
+    padding: 0,
+    autoplay: false,
+    animationDuration: 1000,
+    autoheight: true,
   });
 
   // ADD PREV NEXT THUMBS TO SLIDER

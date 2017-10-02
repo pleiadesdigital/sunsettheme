@@ -42,13 +42,21 @@
                 <img src="<?php echo wp_get_attachment_url($attachments[$i]->ID); ?>">
                 <div class="hide prev-image-circle" data-image="<?php echo $prevImg ?>"></div>
                 <div class="hide next-image-circle" data-image="<?php echo $nextImg ?>"></div>
+
+                <!-- CAPTION -->
+                <div class="image-caption">
+                  <p><?php echo $attachments[$i]->post_excerpt; ?></p>
+                </div><!-- class="image-caption" -->
+
+
+
               </li>
             <?php endfor; ?>
             </ul><!-- class="glide__track" -->
           </div><!-- class="glide__wrapper" -->
 
           <!-- BULLETS -->
-          <div class="glide__bullets"></div>
+         <!-- <div class="glide__bullets"></div> -->
         </div>
       </section>
 

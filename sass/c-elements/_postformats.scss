@@ -143,7 +143,6 @@
   } //.content-footer-wrapper
 } //.blog-section
 
-
 /* IMAGE POST FORMAT */
 .sunset-format-image {
   margin-top: 50px;
@@ -195,7 +194,7 @@
         line-height: 1.5;
         margin: 20px 0px;
       } //p
-    } //.entry-excerpt
+    } //.image-caption
   } //.content-header-wrapper
   // FOOTER
   .content-footer-wrapper {
@@ -273,15 +272,6 @@
 .sunset-format-gallery {
   .content-header-wrapper {
     .glide {
-      ul {
-        li {
-          // border: 2px solid $grey;
-          overflow: hidden;
-          img {
-            width: 100%;
-          } //img
-        } //li
-      } //ul
       .glide__arrows {
         margin-left: 0px;
         .container {
@@ -358,6 +348,51 @@
       float: none;
       display: block;
     } //.entry-meta
+
+    // EXCERPT / IMAGE CAPTION
+    .glide__wrapper {
+      .glide__track { //ul
+        padding-bottom: 0px !important;
+        .glide__slide { //li
+          position: relative;
+          display: block;
+          overflow: hidden;
+          img {
+            width: 100%;
+            height: 100%;
+            margin: 0px !important;
+          } //img
+          .image-caption {
+            position: absolute;
+            display: block;
+            left: 0;
+            bottom: 0px;
+            right: 0;
+            color: $snow;
+            text-align: center;
+            padding: 0px 4em;
+            margin: 0px;
+            @include background-image(linear-gradient(top,  rgba(0,0,0,0.2) 0%,rgba(0,0,0,0.5) 100%));
+            @include single-text-shadow(0px, 1px, 0px, true, $carbon);
+            p {
+              line-height: 1.5;
+              margin: 20px 0px;
+              font-size: 14px;
+              font-size: 0.875rem;
+            } //p
+          } //.image-caption
+        } //.glide__slide
+      } //.glide__track
+    } //.glide__wrapper
+    & .image-caption {
+      @include animate(transform, 750ms);
+      @include transform(translateY(100%));
+    } //& .image-caption
+    &:hover {
+      & .image-caption {
+        @include transform(translateY(0%));
+      } //& .image-caption
+    } //&:hover
   } //.content-header-wrapper
 } //.sunset-format-gallery
 
