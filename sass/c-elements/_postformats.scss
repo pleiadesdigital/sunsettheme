@@ -451,8 +451,37 @@
   } //.the-quote-author
 } //.sunset-format-quote
 
-
-
+/* LINK POST FORMAT */
+.sunset-format-link {
+  .entry-title {
+    // display: block;
+    font-size: 30px;
+    font-size: 1.875rem;
+    margin-bottom: 1em;
+    a {
+      // display: block;
+      .link-icon {
+        display: block;
+        color: $white;
+        width: 40px;
+        height: 40px;
+        margin: 10px auto 0px;
+        font-size: 30px;
+        border-radius: 50%;
+        background-color: rgba(0, 0, 0, 0.6);
+        line-height: 1;
+        padding: 10px;
+        @include animate(all, 0.5s);
+        &:hover {
+          background-color: rgba($red, 0.8);
+        }
+        .fa {
+          margin-top: 4px;
+        } //.fa
+      } //.link-icon
+    } //a
+  } //&.entry-title
+} //.sunset-format-link
 
 
 

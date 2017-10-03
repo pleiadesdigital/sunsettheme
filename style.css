@@ -810,6 +810,40 @@ C. Post Formast
   letter-spacing: 0.06em;
 }
 
+/* LINK POST FORMAT */
+/* line 456, sass/c-elements/_postformats.scss */
+.sunset-format-link .entry-title {
+  font-size: 30px;
+  font-size: 1.875rem;
+  margin-bottom: 1em;
+}
+/* line 463, sass/c-elements/_postformats.scss */
+.sunset-format-link .entry-title a .link-icon {
+  display: block;
+  color: #FFFFFF;
+  width: 40px;
+  height: 40px;
+  margin: 10px auto 0px;
+  font-size: 30px;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.6);
+  line-height: 1;
+  padding: 10px;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+/* line 475, sass/c-elements/_postformats.scss */
+.sunset-format-link .entry-title a .link-icon:hover {
+  background-color: rgba(153, 0, 51, 0.8);
+}
+/* line 478, sass/c-elements/_postformats.scss */
+.sunset-format-link .entry-title a .link-icon .fa {
+  margin-top: 4px;
+}
+
 /* Font Icon */
 /*--------------------------------------------------------------
 D. Navigation

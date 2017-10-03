@@ -137,7 +137,14 @@ function sunset_get_bs_slides($attachments) {
   return $output;
 }
 
-
+// Link Post Format - Grab URL
+function sunset_grab_url() {
+  if (!preg_match('/<a\s[^>]*?href=[\'"](.+?)[\'"]/i', get_the_content(), $links)){
+    return false;
+  } else {
+    return esc_url_raw($links[1]);
+  }
+}
 
 
 
