@@ -414,9 +414,9 @@
       font-size: 2.5rem;
       color: $midsilver;
       @include single-text-shadow(0px, 1px, 0px, true, $carbon);
-
       line-height: 1.2;
       letter-spacing: 0.04em;
+
       &:before {
         font-family: Fontawesome;
         content: '\f10d';
@@ -425,7 +425,7 @@
         @include single-text-shadow(0px, 1px, 0px, true, $carbon);
         display: inline-block;
         position: relative;
-      }
+      } //&:before
       &:after {
         font-family: Fontawesome;
         content: '\f10e';
@@ -434,7 +434,7 @@
         @include single-text-shadow(0px, 1px, 0px, true, $carbon);
         display: inline-block;
         position: relative;
-      }
+      } //&:after
     } //.quote-content
   } //.the-quote
   // THE AUTHOR
@@ -447,7 +447,7 @@
       font-weight: $bold;
       color: $carbon;
       letter-spacing: 0.06em;
-    }
+    } //.quote-author
   } //.the-quote-author
 } //.sunset-format-quote
 

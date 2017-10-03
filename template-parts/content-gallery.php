@@ -30,8 +30,11 @@
               <?php foreach ($attachments as $attachment) { ?>
               <li class="glide__slide <?php echo $attachment['class']; ?>">
                 <img src="<?php echo $attachment['url']; ?>">
-                <div class="hide prev-image-circle" data-image="<?php echo $attachment['prev_img']; ?>"></div>
-                <div class="hide next-image-circle" data-image="<?php echo $attachment['next_img']; ?>"></div>
+                <div class="sunset-carousel-thumb">
+                  <div class="hide prev-image-circle" data-image="<?php echo $attachment['prev_img']; ?>"></div>
+                  <div class="hide next-image-circle" data-image="<?php echo $attachment['next_img']; ?>"></div>
+                </div><!-- class="sunset-carousel-thumb" -->
+
                 <!-- CAPTION -->
                 <div class="image-caption">
                   <p><?php echo $attachment['caption']; ?></p>

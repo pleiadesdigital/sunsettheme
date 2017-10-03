@@ -4,6 +4,50 @@
 		"selected_items":
 		[
 			[
+				"pad",
+				"padding"
+			],
+			[
+				"margin",
+				"margin-bottom"
+			],
+			[
+				"font-",
+				"font-family"
+			],
+			[
+				"mar",
+				"margin-bottom"
+			],
+			[
+				"text",
+				"text-align"
+			],
+			[
+				"padd",
+				"padding-bottom"
+			],
+			[
+				"nex",
+				"$nextImg〔variable〕"
+			],
+			[
+				"light",
+				"lightgrey"
+			],
+			[
+				"margin-",
+				"margin-left"
+			],
+			[
+				"paddi",
+				"padding"
+			],
+			[
+				"att",
+				"$attachments〔variable〕"
+			],
+			[
 				"endfor",
 				"endforeach〔keyword〕"
 			],
@@ -28,28 +72,12 @@
 				"$attachments〔variable〕"
 			],
 			[
-				"padd",
-				"padding-bottom"
-			],
-			[
-				"margin",
-				"margin-top"
-			],
-			[
-				"paddi",
-				"padding-bottom"
-			],
-			[
 				"bor",
 				"border"
 			],
 			[
 				"cur",
 				"cursor"
-			],
-			[
-				"mar",
-				"margin-right"
 			],
 			[
 				"marg",
@@ -68,20 +96,12 @@
 				"inline-block"
 			],
 			[
-				"att",
-				"$attachment〔variable〕"
-			],
-			[
 				"for",
 				"foreach\tforeach …"
 			],
 			[
 				"border",
 				"border-radius"
-			],
-			[
-				"text",
-				"text-align"
 			],
 			[
 				"bacl",
@@ -148,10 +168,10 @@
 	"buffers":
 	[
 		{
-			"file": "template-parts/content-gallery.php",
+			"file": "template-parts/content-quote.php",
 			"settings":
 			{
-				"buffer_size": 2883,
+				"buffer_size": 952,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
@@ -160,7 +180,7 @@
 			"file": "sass/c-elements/_postformats.scss",
 			"settings":
 			{
-				"buffer_size": 6564,
+				"buffer_size": 11593,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
@@ -202,33 +222,44 @@
 	},
 	"expanded_folders":
 	[
-		"/Users/ronyortiz/Sites/training2017/sunset/wp-content/themes/sunsettheme",
-		"/Users/ronyortiz/Sites/training2017/sunset/wp-content/themes/sunsettheme/sass",
-		"/Users/ronyortiz/Sites/training2017/sunset/wp-content/themes/sunsettheme/sass/c-elements"
+		"/Users/ronyortiz/Sites/training2017/sunset/wp-content/themes/sunsettheme"
 	],
 	"file_history":
 	[
-		"/Users/ronyortiz/Library/Application Support/Sublime Text 3/Packages/User/Text Ex Machina.tmTheme",
+		"/Users/ronyortiz/Library/Application Support/Sublime Text 3/Packages/User/IR_White.tmTheme",
+		"/Users/ronyortiz/Library/Application Support/Sublime Text 3/Packages/User/IR_Black.tmTheme",
+		"/Users/ronyortiz/Sites/training2017/sunset/wp-content/themes/sunsettheme/inc/theme-support.php",
+		"/Users/ronyortiz/Sites/training2017/sunset/wp-content/themes/sunsettheme/template-parts/content-gallery.php",
+		"/Users/ronyortiz/Library/Application Support/Sublime Text 3/Packages/User/Fluidvision.tmTheme",
+		"/Users/ronyortiz/Library/Application Support/Sublime Text 3/Packages/User/Freckle.tmTheme",
+		"/Users/ronyortiz/Library/Application Support/Sublime Text 3/Packages/User/Blackboard.tmTheme",
+		"/Users/ronyortiz/Library/Application Support/Sublime Text 3/Packages/User/BBEdit.tmTheme",
+		"/Users/ronyortiz/Library/Application Support/Sublime Text 3/Packages/Material Theme/schemes/Material-Theme.tmTheme",
+		"/Users/ronyortiz/Sites/training2017/sunset/wp-content/themes/sunsettheme/sass/c-elements/_postformats.scss",
+		"/Users/ronyortiz/Sites/training2017/sunset/wp-content/themes/sunsettheme/js/app.js",
+		"/Users/ronyortiz/Sites/training2017/sunset/wp-content/themes/sunsettheme/template-parts/content-image.php",
+		"/Users/ronyortiz/Library/Application Support/Sublime Text 3/Packages/User/Django.tmTheme",
+		"/Users/ronyortiz/Library/Application Support/Sublime Text 3/Packages/User/Happy happy joy joy 2.tmTheme",
+		"/Users/ronyortiz/Sites/training2017/sunset/wp-content/themes/sunsettheme/inc/enqueue.php",
 		"/Users/ronyortiz/Sites/training2017/sunset/wp-content/themes/sunsettheme/functions.php",
 		"/Users/ronyortiz/Sites/training2017/sunset/wp-content/themes/sunsettheme/js/main.js",
-		"/Users/ronyortiz/Sites/training2017/sunset/wp-content/themes/sunsettheme/sandbox.php",
-		"/Users/ronyortiz/Sites/training2017/sunset/wp-content/themes/sunsettheme/inc/enqueue.php",
-		"/Users/ronyortiz/Sites/training2017/sunset/wp-content/themes/sunsettheme/inc/theme-support.php",
-		"/Users/ronyortiz/Sites/training2017/sunset/wp-content/themes/sunsettheme/js/glide.js",
-		"/Users/ronyortiz/Sites/training2017/sunset/wp-content/themes/sunsettheme/css/glide.core.css",
+		"/Users/ronyortiz/Library/Application Support/Sublime Text 3/Packages/User/Clouds.tmTheme",
 		"/Users/ronyortiz/Sites/training2017/sunset/wp-content/themes/sunsettheme/css/glide.theme.css",
+		"/Users/ronyortiz/Library/Application Support/Sublime Text 3/Packages/User/Dawn.tmTheme",
+		"/Users/ronyortiz/Library/Application Support/Sublime Text 3/Packages/User/iLife 05.tmTheme",
+		"/Users/ronyortiz/Sites/training2017/sunset/wp-content/themes/sunsettheme/js/glide.js",
+		"/Users/ronyortiz/Library/Application Support/Sublime Text 3/Packages/User/Text Ex Machina.tmTheme",
+		"/Users/ronyortiz/Sites/training2017/sunset/wp-content/themes/sunsettheme/sandbox.php",
+		"/Users/ronyortiz/Sites/training2017/sunset/wp-content/themes/sunsettheme/css/glide.core.css",
 		"/Users/ronyortiz/Sites/training2017/sunset/wp-content/themes/sunsettheme/sass/b-layout/_header.scss",
 		"/Users/ronyortiz/Sites/training2017/sunset/wp-content/themes/sunsettheme/sass/d-navigation/_main-navigation.scss",
 		"/Users/ronyortiz/Sites/training2017/sunset/wp-content/themes/sunsettheme/header.php",
 		"/Users/ronyortiz/Desktop/glidejs-master/src/sass/glide.theme.scss",
 		"/Users/ronyortiz/Sites/training2017/sunset/wp-content/themes/sunsettheme/template-parts/content-video.php",
 		"/Users/ronyortiz/Sites/training2017/sunset/wp-content/themes/sunsettheme/template-parts/content.php",
-		"/Users/ronyortiz/Sites/training2017/sunset/wp-content/themes/sunsettheme/sass/c-elements/_postformats.scss",
 		"/Users/ronyortiz/Sites/training2017/sunset/wp-content/themes/sunsettheme/sass/b-layout/_blog.scss",
 		"/Users/ronyortiz/Sites/training2017/sunset/wp-content/themes/sunsettheme/template-parts/content-audio.php",
-		"/Users/ronyortiz/Library/Application Support/Sublime Text 3/Packages/User/Happy happy joy joy 2.tmTheme",
 		"/Users/ronyortiz/Library/Application Support/Sublime Text 3/Packages/User/Last Night.tmTheme",
-		"/Users/ronyortiz/Sites/training2017/sunset/wp-content/themes/sunsettheme/template-parts/content-image.php",
 		"/Users/ronyortiz/Sites/training2017/sunset/wp-content/themes/sunsettheme/sass/style.scss",
 		"/Users/ronyortiz/Sites/training2017/sunset/wp-content/themes/sunsettheme/sass/c-elements/_formatting.scss",
 		"/Users/ronyortiz/Sites/training2017/sunset/wp-content/themes/sunsettheme/home.php",
@@ -291,19 +322,19 @@
 			[
 				{
 					"buffer": 0,
-					"file": "template-parts/content-gallery.php",
+					"file": "template-parts/content-quote.php",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 2883,
+						"buffer_size": 952,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								93,
-								114
+								952,
+								952
 							]
 						],
 						"settings":
@@ -314,27 +345,12 @@
 							{
 								"close":
 								{
-									"1":
-									[
-										114,
-										115
-									]
 								},
 								"icon":
 								{
-									"1":
-									[
-										"Packages/BracketHighlighter/icons/single_quote.png",
-										"brackethighlighter.default"
-									]
 								},
 								"open":
 								{
-									"1":
-									[
-										92,
-										93
-									]
 								},
 								"unmatched":
 								{
@@ -342,31 +358,21 @@
 							},
 							"bracket_highlighter.regions":
 							[
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
 								"bh_single_quote",
 								"bh_single_quote_center",
 								"bh_single_quote_open",
 								"bh_single_quote_close",
 								"bh_single_quote_content",
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_angle_content",
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_square_content",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_default_content",
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_regex_content",
 								"bh_curly",
 								"bh_curly_center",
 								"bh_curly_open",
@@ -377,29 +383,39 @@
 								"bh_c_define_open",
 								"bh_c_define_close",
 								"bh_c_define_content",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_double_quote_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
 								"bh_round",
 								"bh_round_center",
 								"bh_round_open",
 								"bh_round_close",
 								"bh_round_content",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_tag_content",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_unmatched_content"
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content"
 							],
 							"bs_sintax": "php",
-							"buffer_scroll_name": "e6154fce",
+							"buffer_scroll_name": "e3f6964c",
 							"open_with_edit": true,
 							"spell_check": false,
 							"syntax": "Packages/PHP/PHP.sublime-syntax",
@@ -410,7 +426,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
+					"stack_index": 0,
 					"type": "text"
 				}
 			]
@@ -425,15 +441,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 6564,
+						"buffer_size": 11593,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								6518,
-								6518
+								11527,
+								11527
 							]
 						],
 						"settings":
@@ -445,8 +461,8 @@
 								{
 									"1":
 									[
-										6517,
-										6518
+										11530,
+										11531
 									]
 								},
 								"icon":
@@ -461,8 +477,8 @@
 								{
 									"1":
 									[
-										6482,
-										6483
+										11308,
+										11309
 									]
 								},
 								"unmatched":
@@ -471,26 +487,6 @@
 							},
 							"bracket_highlighter.regions":
 							[
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_curly_content",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_default_content",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_round_content",
-								"bh_c_define",
-								"bh_c_define_center",
-								"bh_c_define_open",
-								"bh_c_define_close",
-								"bh_c_define_content",
 								"bh_tag",
 								"bh_tag_center",
 								"bh_tag_open",
@@ -501,31 +497,51 @@
 								"bh_double_quote_open",
 								"bh_double_quote_close",
 								"bh_double_quote_content",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_unmatched_content",
 								"bh_single_quote",
 								"bh_single_quote_center",
 								"bh_single_quote_open",
 								"bh_single_quote_close",
 								"bh_single_quote_content",
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_regex_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
 								"bh_angle",
 								"bh_angle_center",
 								"bh_angle_open",
 								"bh_angle_close",
 								"bh_angle_content",
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_square_content"
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content"
 							],
 							"bs_sintax": "scss",
 							"buffer_scroll_name": "89e960dc",
@@ -535,10 +551,10 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 483.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 0,
+					"stack_index": 1,
 					"type": "text"
 				}
 			]
@@ -572,7 +588,7 @@
 		"cols":
 		[
 			0.0,
-			0.54359439834,
+			0.581607531671,
 			1.0
 		],
 		"rows":
@@ -620,14 +636,14 @@
 		],
 		"width": 0.0
 	},
-	"selected_group": 1,
+	"selected_group": 0,
 	"settings":
 	{
 	},
 	"show_minimap": true,
 	"show_open_files": false,
 	"show_tabs": true,
-	"side_bar_visible": false,
+	"side_bar_visible": true,
 	"side_bar_width": 215.0,
 	"status_bar_visible": true,
 	"template_settings":
