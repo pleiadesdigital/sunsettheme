@@ -483,7 +483,58 @@
   } //&.entry-title
 } //.sunset-format-link
 
+/* ASIDE POST FORMAT */
+.sunset-format-aside {
+  margin-top: 2em;
+  .content-header-wrapper {
+    background-color: rgba(0, 0, 0, 0.1);
+    padding: 1em;
+    .aside-image {
+      @include span(3);
+      .aside-featured-image {
+        display: block;
+        margin: 0px auto -20px;
+        z-index: 100;
+        text-align: center;
+        width: 170px;
+        height: 170px;
+        border-radius: 50%;
+      }
+    } //.aside-image
+    .aside-content {
+      @include span (8 at 4);
+      .entry-meta {
+        text-align: left;
+        font-size: 13px;
+        font-size: 0.8125rem;
+      } //.entry-meta
+      .entry-excerpt {
+        margin-top: 1em;
+        font-size: 15px;
+        font-size: 0.9375rem;
+        p {
+          line-height: 2;
+        }
+      } //.entry-excerpt
+    } //.aside-content
+  } //.content-header-wrapper
+  .content-footer-wrapper {
+    border-bottom: none;
+    margin-top: 0px;
+    background-color: rgba(0, 0, 0, 0.2);
+    padding: 1em;
+    .footer-phantom {
+      @include span(3);
+      display: block;
+      border: 1px solid rgba(0, 0, 0, 0);
+    }
+    .footer-content {
+      @include span(8 at 4);
+    }
+  } //.content-footer-wrapper
 
+
+} //.sunset-format-aside
 
 
 

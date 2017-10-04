@@ -118,6 +118,23 @@ A. Normalize
 B. Layout
 --------------------------------------------------------------*/
 /* line 2, sass/b-layout/_base.scss */
+html {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 8, sass/b-layout/_base.scss */
+*,
+*:before,
+*:after {
+  /* Inherit box-sizing to make it easier to change the property for components that leverage other behavior; see http://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/ */
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+/* line 18, sass/b-layout/_base.scss */
 body {
   font-family: "Raleway", sans-serif;
   font-weight: 400;
@@ -125,7 +142,7 @@ body {
   font-size: 16px;
 }
 
-/* line 8, sass/b-layout/_base.scss */
+/* line 24, sass/b-layout/_base.scss */
 a {
   text-decoration: none;
   color: #999999;
@@ -135,19 +152,19 @@ a {
   -o-transition: color 0.3s ease;
   transition: color 0.3s ease;
 }
-/* line 12, sass/b-layout/_base.scss */
+/* line 28, sass/b-layout/_base.scss */
 a:hover, a:focus {
   color: #333333;
 }
 
-/* line 17, sass/b-layout/_base.scss */
+/* line 33, sass/b-layout/_base.scss */
 .background-image {
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
 }
 
-/* line 27, sass/b-layout/_base.scss */
+/* line 43, sass/b-layout/_base.scss */
 .content-area .content-header .content-header-wrapper {
   max-width: 1000px;
   margin-left: auto;
@@ -159,7 +176,7 @@ a:hover, a:focus {
   display: block;
   clear: both;
 }
-/* line 34, sass/b-layout/_base.scss */
+/* line 50, sass/b-layout/_base.scss */
 .content-area .content-body .content-body-wrapper {
   max-width: 1000px;
   margin-left: auto;
@@ -171,7 +188,7 @@ a:hover, a:focus {
   display: block;
   clear: both;
 }
-/* line 41, sass/b-layout/_base.scss */
+/* line 57, sass/b-layout/_base.scss */
 .content-area .content-footer .content-footer-wrapper {
   max-width: 1000px;
   margin-left: auto;
@@ -842,6 +859,76 @@ C. Post Formast
 /* line 478, sass/c-elements/_postformats.scss */
 .sunset-format-link .entry-title a .link-icon .fa {
   margin-top: 4px;
+}
+
+/* ASIDE POST FORMAT */
+/* line 487, sass/c-elements/_postformats.scss */
+.sunset-format-aside {
+  margin-top: 2em;
+}
+/* line 489, sass/c-elements/_postformats.scss */
+.sunset-format-aside .content-header-wrapper {
+  background-color: rgba(0, 0, 0, 0.1);
+  padding: 1em;
+}
+/* line 492, sass/c-elements/_postformats.scss */
+.sunset-format-aside .content-header-wrapper .aside-image {
+  width: 23.72881%;
+  float: left;
+  margin-right: 1.69492%;
+}
+/* line 494, sass/c-elements/_postformats.scss */
+.sunset-format-aside .content-header-wrapper .aside-image .aside-featured-image {
+  display: block;
+  margin: 0px auto -20px;
+  z-index: 100;
+  text-align: center;
+  width: 170px;
+  height: 170px;
+  border-radius: 50%;
+}
+/* line 504, sass/c-elements/_postformats.scss */
+.sunset-format-aside .content-header-wrapper .aside-content {
+  width: 66.10169%;
+  float: left;
+  margin-right: 1.69492%;
+}
+/* line 506, sass/c-elements/_postformats.scss */
+.sunset-format-aside .content-header-wrapper .aside-content .entry-meta {
+  text-align: left;
+  font-size: 13px;
+  font-size: 0.8125rem;
+}
+/* line 511, sass/c-elements/_postformats.scss */
+.sunset-format-aside .content-header-wrapper .aside-content .entry-excerpt {
+  margin-top: 1em;
+  font-size: 15px;
+  font-size: 0.9375rem;
+}
+/* line 515, sass/c-elements/_postformats.scss */
+.sunset-format-aside .content-header-wrapper .aside-content .entry-excerpt p {
+  line-height: 2;
+}
+/* line 521, sass/c-elements/_postformats.scss */
+.sunset-format-aside .content-footer-wrapper {
+  border-bottom: none;
+  margin-top: 0px;
+  background-color: rgba(0, 0, 0, 0.2);
+  padding: 1em;
+}
+/* line 526, sass/c-elements/_postformats.scss */
+.sunset-format-aside .content-footer-wrapper .footer-phantom {
+  width: 23.72881%;
+  float: left;
+  margin-right: 1.69492%;
+  display: block;
+  border: 1px solid transparent;
+}
+/* line 531, sass/c-elements/_postformats.scss */
+.sunset-format-aside .content-footer-wrapper .footer-content {
+  width: 66.10169%;
+  float: left;
+  margin-right: 1.69492%;
 }
 
 /* Font Icon */
