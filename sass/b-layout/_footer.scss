@@ -1,0 +1,13 @@
+.site-footer {
+  background-color: $midgrey;
+  padding: 20px 0px;
+  margin-top: 40px;
+  display: block;
+  .site-footer-wrapper {
+    text-align: center;
+    text-transform: uppercase;
+    color: $snow;
+    font-weight: $medium;
+  } //.site-footer-wrapper
+
+} //.site-footer

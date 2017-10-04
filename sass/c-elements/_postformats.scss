@@ -83,7 +83,7 @@
         padding: 10px 15px;
         border-radius: 4px;
         border: 1px solid $lightsilver;
-        width: 100px;
+        width: 150px;
         margin: 0px auto;
         @include animate(border, 0.5s);
         &:hover,
@@ -532,8 +532,6 @@
       @include span(8 at 4);
     }
   } //.content-footer-wrapper
-
-
 } //.sunset-format-aside
 
 
