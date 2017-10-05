@@ -1,7 +1,9 @@
 <?php /* Aside  Post Format */ ?>
 
-
-<article id="post-<?php the_ID(); ?>" <?php post_class('sunset-format-aside'); ?>>
+<?php
+  //$class = get_query_var('post-class');
+?>
+<article id="post-<?php the_ID(); ?>" <?php post_class(array('sunset-format-aside'/*, $class*/)); ?>>
 
   <!-- CONTENT HEADER -->
   <header class="entry-header content-header blog-header">

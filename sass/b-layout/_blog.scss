@@ -19,29 +19,37 @@
     width: 200px;
     opacity: 0.5;
     @include animate( opacity, 320ms );
-
     &:hover,
     &:focus,
     &.loading {
       opacity: 1;
     }
-
     &.loading {
       cursor: default;
     }
-
     span {
       display: block;
     }
     .sunset-loading {
-
       font-family: 'Fontawesome';
       &:before {
         content: '\f021';
       } //&:before
     }//.sunset-loading
-
   } //.btn-sunset-load
+
+  .sunset-posts-container {
+    article {
+      @include animate(all, 320ms);
+      @include transform(translateY(100px));
+      opacity: 0;
+      &.reveal {
+        @include transform(translateY(0));
+        opacity: 1;
+      }
+    } //article
+  } //.sunset-posts-container
+
 
 } //.blog
 

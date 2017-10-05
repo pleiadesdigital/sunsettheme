@@ -1,5 +1,5 @@
 jQuery(document).ready(function($){
-
+  revealPosts()
   // GLIDE SLIDER SETUP
   $("#Glide").glide({
     type: 'carousel',
@@ -12,7 +12,6 @@ jQuery(document).ready(function($){
 
   // LOOP THROUGH ELEMENTS ON EACH GALLERY POST
   var carousel = '.sunset-carousel-thumb';
-  $()
 
   $(carousel).each(function(){
     // ADD PREV NEXT THUMBS TO SLIDER
@@ -36,7 +35,6 @@ jQuery(document).ready(function($){
     that.addClass('loading').find('.text').slideUp(320);
     that.find('.sunset-icon').addClass('spin');
 
-
     $.ajax({
       url : ajaxurl,
       type : 'post',
@@ -48,18 +46,35 @@ jQuery(document).ready(function($){
         console.log(reponse);
       },
       success: function(response){
-        that.data('page', newPage);
-        $('.sunset-posts-container').append(response);
-        setTimeout(function(){
+        setTimeout(function() {
+
+          that.data('page', newPage);
+          $('.sunset-posts-container').append(response);
+
           that.removeClass('loading').find('.text').slideDown(320);
           that.find('.sunset-icon').removeClass('spin');
+
+          revealPosts();
+
         }, 1000);
       }
     });
   });
 
+  /* Helper Functions */
 
-
+  function revealPosts() {
+    var posts = $('article:not(.reveal)');
+    var i = 0;
+    setInterval(function(){
+      if (i >= posts.length) {
+        return false;
+      }
+      var el = posts[i];
+      $(el).addClass('reveal');/*.find('.sunset-carousel-thumb').carousel()*/
+      i++;
+    }, 200);
+  }
 
 
 }); //jQuery(document).ready(function($)

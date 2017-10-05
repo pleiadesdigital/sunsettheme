@@ -7,9 +7,14 @@
   <main id="main" class="site-main blog-section" role="main">
 
     <div class="sunset-posts-container">
-      <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
-        <?php get_template_part('template-parts/content', get_post_format()); ?>
-      <?php endwhile; endif; ?>
+      <?php
+        if (have_posts()) : while (have_posts()) : the_post();
+          /*
+          $class = 'reveal';
+          set_query_var('post-class', $class);
+          */
+          get_template_part('template-parts/content', get_post_format());
+        endwhile; endif; ?>
     </div><!-- class="sunset-posts-container -->
 
 
