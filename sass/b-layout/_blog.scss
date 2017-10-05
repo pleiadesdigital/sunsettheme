@@ -2,31 +2,56 @@
 
   // BUTTON {
   .button-container {
-    text-align: center;
-    text-transform: uppercase;
-    font-size: 14px;
-    font-size: 0.875rem;
-    font-weight: $thin;
-    color: $lightgrey;
-    padding: 10px 20px;
-    border-radius: 4px;
-    border: 1px solid $lightsilver;
-    width: 200px;
     margin: 20px auto 0px;
-    @include animate(border, 0.5s);
-    &:hover,
-    &:focus {
-      cursor: pointer;
-      border: 1px solid $carbon;
-      @include animate(border, 0.5s);
-      .btn-default {
-        color: $black;
-      } //.btn-default
-    } //&:hover, &:focus
   } //.button-container
 
+  // Ajax Loading
+  .btn-sunset-load {
+    text-align: center;
+    text-transform: lowercase;
+    font-weight: $thin;
+    display: block;
+    color: #222222;
+    font-size: 22px;
+    font-size: 1.375rem;
+    margin: 0px auto;
+    cursor: pointer;
+    width: 200px;
+    opacity: 0.5;
+    @include animate( opacity, 320ms );
+
+    &:hover,
+    &:focus,
+    &.loading {
+      opacity: 1;
+    }
+
+    &.loading {
+      cursor: default;
+    }
+
+    span {
+      display: block;
+    }
+    .sunset-loading {
+
+      font-family: 'Fontawesome';
+      &:before {
+        content: '\f021';
+      } //&:before
+    }//.sunset-loading
+
+  } //.btn-sunset-load
 
 } //.blog
+
+.spin {
+  animation-name: spin;
+  animation-duration: 1000ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+} //.spin
+
 
 
 
