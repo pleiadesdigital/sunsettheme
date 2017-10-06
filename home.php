@@ -7,19 +7,22 @@
   <main id="main" class="site-main blog-section" role="main">
 
     <div class="sunset-posts-container">
-      <?php
-        if (have_posts()) : while (have_posts()) : the_post();
+      <?php if (have_posts()) : ?>
+        <div class="page-limit" data-page="/<?php sunset_check_paged(); ?>">
+        <?php while (have_posts()) : the_post();
           /*
           $class = 'reveal';
           set_query_var('post-class', $class);
           */
           get_template_part('template-parts/content', get_post_format());
-        endwhile; endif; ?>
+        endwhile; ?>
+        </div>
+      <?php endif; ?>
     </div><!-- class="sunset-posts-container -->
 
 
     <div class="button-container">
-      <a class="btn-sunset-load sunset-load-more" data-page="1" data-url="<?php echo admin_url('admin-ajax.php'); ?>">
+      <a class="btn-sunset-load sunset-load-more" data-page="<?php echo sunset_check_paged(1); ?>" data-url="<?php echo admin_url('admin-ajax.php'); ?>">
         <span class="sunset-icon sunset-loading"></span>
         <span class="text"><?php _e('Load More'); ?></span>
       </a>

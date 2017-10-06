@@ -2,6 +2,9 @@
 .blog-section {
   // HEADER
   .content-header-wrapper {
+    article {
+      padding: 40px 0px;
+    }
     padding: 2em 0px;
     display: block;
     .entry-title {
@@ -457,7 +460,7 @@
     // display: block;
     font-size: 30px;
     font-size: 1.875rem;
-    margin-bottom: 1em;
+    // margin-bottom: 1em;
     a {
       // display: block;
       .link-icon {

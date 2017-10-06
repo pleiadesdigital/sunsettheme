@@ -39,6 +39,7 @@
   } //.btn-sunset-load
 
   .sunset-posts-container {
+    padding-top: 40px;
     article {
       @include animate(all, 320ms);
       @include transform(translateY(100px));
@@ -46,7 +47,7 @@
       &.reveal {
         @include transform(translateY(0));
         opacity: 1;
-      }
+      } //&.reveal
     } //article
   } //.sunset-posts-container
 

@@ -10,9 +10,11 @@ jQuery(document).ready(function($){
     autoheight: true,
   });
 
-  // LOOP THROUGH ELEMENTS ON EACH GALLERY POST
+ // Variable Declarations
   var carousel = '.sunset-carousel-thumb';
+  var last_scroll = 0;
 
+  // LOOP THROUGH ELEMENTS ON EACH GALLERY POST
   $(carousel).each(function(){
     // ADD PREV NEXT THUMBS TO SLIDER
     $(document).on('mouseenter', '.container.next', function(){
@@ -61,8 +63,23 @@ jQuery(document).ready(function($){
     });
   });
 
-  /* Helper Functions */
+  /* Scroll Functions */
+  $(window).scroll(function(){
+    var scroll = $(window).scrollTop();
 
+    if (Math.abs(scroll - last_scroll) > $(window).height()*0.1) {
+      last_scroll = scroll;
+      $('.page-limit').each(function(index){
+        if (isVisible($(this))) {
+          history.replaceState(null, null, $(this).attr("data-page"));
+          return (false);
+        }
+      });
+    }
+
+  });
+
+  /* Helper Functions */
   function revealPosts() {
     var posts = $('article:not(.reveal)');
     var i = 0;
@@ -76,6 +93,14 @@ jQuery(document).ready(function($){
     }, 200);
   }
 
+  function isVisible(element) {
+    var scroll_pos = $(window).scrollTop();
+    var window_height = $(window).height();
+    var el_top = $(element).offset().top;
+    var el_height = $(element).height();
+    var el_bottom = el_top + el_height;
+    return ((el_bottom - el_height * 0.25 > scroll_pos) && (el_top < (scroll_pos + 0.5 * window_height)));
+  }
 
 }); //jQuery(document).ready(function($)
 
